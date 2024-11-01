@@ -45,4 +45,5 @@ describe("User Registration", () => {
     expect(response.status).toBe(400);
     expect(response.body.message).toBe("Validation error");
   });
+  
 });

@@ -2,6 +2,7 @@ import request from 'supertest';
 import User from '../models/user';
 import { app } from '../server';
 import { hashPassword } from '../utilits/PasswordUtilits';
+import { closeDB } from '../db';
 
 const BASE_URL = '/login';
 const testUser = {
@@ -18,7 +19,7 @@ describe("User Login", () => {
       password: hashedPassword,
     });
   });
-
+  
   it("should login successfully with valid credentials", async () => {
     const response = await request(app)
       .post(BASE_URL)
@@ -51,4 +52,6 @@ describe("User Login", () => {
     expect(response.status).toBe(401);
     expect(response.body.message).toBe("Invalid password");
   });
+
+  
 });

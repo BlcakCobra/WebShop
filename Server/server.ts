@@ -36,6 +36,8 @@ app.use('/', router);
 app.use(notFoundHandler);
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  logger.info(`Server running at http://localhost:${PORT}/`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    logger.info(`Server running at http://localhost:${PORT}/`);
+  });
+}

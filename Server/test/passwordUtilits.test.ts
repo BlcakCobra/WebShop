@@ -1,5 +1,6 @@
 import { hashPassword } from '../utilits/PasswordUtilits';
 import bcrypt from 'bcrypt';
+import logger from '../log/logger';
 
 describe('Password Utility Functions', () => {
   it('should hash password correctly', async () => {

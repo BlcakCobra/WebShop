@@ -7,7 +7,10 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "allowJs": true,
     "noEmit": true,
     "incremental": true,
@@ -15,8 +18,20 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "strictNullChecks": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["Server/**/*.ts", "app/**/*.tsx", ".next/types/**/*.ts", "test/**/*"],
-  "exclude": ["node_modules"]
+  "include": [
+    "Server/**/*.ts",
+    "app/**/*.tsx",
+    ".next/types/**/*.ts",
+    "test/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
