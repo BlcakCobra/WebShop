@@ -2,10 +2,8 @@
 
 import React from 'react';
 import styles from "./Register.module.css";
-import { useAppDispatch, useAppSelector } from '../store/store';
-import { AsynkAuthentication, controlConfirmPassword, controlPassword, controlUsername } from '../store/Slices/AuthenticationSlice';
-import {images} from "./../Images/images"
-import { useRouter } from 'next/navigation';
+import { useAppDispatch, useAppSelector } from './../../app/store/store';
+import { AsynkAuthentication, controlConfirmPassword, controlPassword, controlUsername } from './../../app/store/Slices/AuthenticationSlice';
 import Link from 'next/link';
 
 export default function Register() {
@@ -17,14 +15,10 @@ export default function Register() {
     dispatch(AsynkAuthentication({ username, password, confirmPassword }));
   };
 
-  const router = useRouter()  
-  const  previousPage = () => {
-    router.back()
-  }
+
   return (
     <>
-    <div className={styles.MainRegisterPage}  style={{backgroundImage:`url(${images.AuthBackground.src})`}} >
-      <button onClick={() =>previousPage()} className={styles.prevButton}>Back</button>
+    <div className={styles.MainRegisterPage}   >
     <div className={styles.regMenu}>
     <h1 className={styles.h1}>Registration</h1>
       <form onSubmit={handleSubmit}>

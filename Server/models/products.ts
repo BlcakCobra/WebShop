@@ -13,6 +13,7 @@ interface IProduct extends Document {
     createdAt: Date;
     discount: number;
     rating: number;
+    views:number
 }
 
  const ProductSchema: Schema<IProduct> = new Schema({

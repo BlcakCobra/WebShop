@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { LoginSliceinitialState } from "./../../types/AuthenticationSliceType";
-import { RequestesToServer } from "./../../api/api";
+import { RequestesToServer } from "../../api/api";
 
 export const AsyncLoginSlice = createAsyncThunk(
     "AsyncLoginSlice",
@@ -27,7 +27,7 @@ const initialState: LoginSliceinitialState = {
     token: typeof window !== "undefined" ? localStorage.getItem('token') : null,
 };
 
-export const LoginSlice = createSlice({
+const LoginSlice = createSlice({
     name: "LoginSlice",
     initialState: initialState,
     reducers: {
@@ -63,3 +63,4 @@ export const LoginSlice = createSlice({
 });
 
 export const {controlPassword,controlUsername} = LoginSlice.actions
+export default LoginSlice.reducer

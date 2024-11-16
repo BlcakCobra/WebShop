@@ -1,12 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { AuthenticationSlice } from "./Slices/AuthenticationSlice";
-import {LoginSlice} from "./Slices/LoginSlice"
-import { TypedUseSelectorHook, useDispatch, useSelector, useStore } from "react-redux";
+import  AuthenticationSlice  from "./Slices/AuthenticationSlice";
+import LoginSlice from "./Slices/LoginSlice"
+import ProductSlice from "./Slices/ProductSlice"
+import { TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
 
 export const store = configureStore({
     reducer:{
-        Authentication : AuthenticationSlice.reducer,
-        login:LoginSlice.reducer
+        Authentication:AuthenticationSlice,
+        login:LoginSlice,
+        ProductSlice:ProductSlice
     }       
 })
 

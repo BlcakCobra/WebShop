@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { RequestesToServer } from "../../api/api";
 import {AuthenticationSliceinitialState} from "./../../types/AuthenticationSliceType"
+import axios from "axios";
 
 
 export const AsynkAuthentication = createAsyncThunk(
@@ -10,9 +11,14 @@ export const AsynkAuthentication = createAsyncThunk(
             const res = await RequestesToServer.RegistrationReq(userData.username, userData.password, userData.confirmPassword);
             console.log('API Response:', res);
             return res.data;
-        } catch (error: any) {
-            console.error("Something went wrong", error);
-            return thunkAPI.rejectWithValue(error.response.data);
+        } catch (error: unknown) {
+            if (axios.isAxiosError(error)) {
+                console.error("Something went wrong", error);
+                return thunkAPI.rejectWithValue(error.response?.data || "An unexpected error occurred");
+            } else {
+                console.error("An unexpected error occurred", error);
+                return thunkAPI.rejectWithValue("An unexpected error occurred");
+            }
         }
     }
 );
@@ -24,7 +30,7 @@ const initialState : AuthenticationSliceinitialState ={
     password: "",
     confirmPassword: ""
 }
-export const AuthenticationSlice = createSlice({
+const AuthenticationSlice = createSlice({
     name:"AuthenticationSlice",
     initialState:initialState,
     reducers:{
@@ -58,3 +64,4 @@ export const AuthenticationSlice = createSlice({
 })
 
 export  const  {controlUsername,controlPassword,controlConfirmPassword} = AuthenticationSlice.actions
+export default AuthenticationSlice.reducer

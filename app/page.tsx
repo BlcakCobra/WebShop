@@ -1,12 +1,13 @@
 'use client'; 
 
 import React from 'react';
-import Navbar from './Components/Navbar/Navbar';
+import styles from "./page.module.css"
+import Main from "./Components/Main/Main"
 
 export default function Page() {
   return (
     <>
-    <Navbar/>
+    <Main/>
     </>
   );
 }

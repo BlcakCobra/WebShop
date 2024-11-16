@@ -9,7 +9,6 @@ export const loginControll = async (req: Request, res: Response): Promise<void> 
 
     try {
         const user = await User.findOne({ username });
-
         if (!user) {
             logger.warn(`Login attempt for non-existent user: ${username}`);
             res.status(400).json({ message: 'User not found' });
@@ -25,13 +24,13 @@ export const loginControll = async (req: Request, res: Response): Promise<void> 
         }
 
         const token = jwt.sign(
-            { id: user._id },
+            { id: user._id, role: user.role }, 
             process.env.JWT_SECRET as string,
             { expiresIn: '1h' }
         );
         logger.info(`User logged in successfully: ${username}`); 
         res.status(200).json({ token });
-    } catch (error:any) {
+    } catch (error: any) {
         logger.error(`Server error during login: ${error.message}`); 
         console.error(error);
         res.status(500).json({ message: 'Server error' });

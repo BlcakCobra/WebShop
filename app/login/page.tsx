@@ -1,22 +1,19 @@
 "use client";
 import React, { useEffect } from 'react';
-import styles from "./Login.module.css";
-import { useAppDispatch, useAppSelector } from '../store/store';
-import {images} from "./../Images/images"
+import styles from "./Login.module.css"
+import { useAppDispatch, useAppSelector} from "./../store/store"
 import { useRouter } from 'next/navigation';
-import { AsyncLoginSlice, controlPassword, controlUsername, LoginSlice } from '../store/Slices/LoginSlice';
+import { AsyncLoginSlice, controlPassword, controlUsername } from "./../store/Slices/LoginSlice"
 
 export default function Login() {
-  const { username, password,error,token} = useAppSelector((state) => state.login);
+  const { username, password,error,token} = useAppSelector((state) => state.login)
   const dispatch = useAppDispatch();
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     dispatch(AsyncLoginSlice({username,password}))
   };
   const router = useRouter()  
-  const  previousPage = () => {
-    router.back()
-  }
+
   console.log(token);
   useEffect(() =>{
     if(token !== null){
@@ -28,8 +25,7 @@ export default function Login() {
     
   return (
     <>
-    <div className={styles.MainRegisterPage}  style={{backgroundImage:`url(${images.AuthBackground.src})`}} >
-      <button onClick={() =>previousPage()} className={styles.prevButton}>Back</button>
+    <div className={styles.MainRegisterPage} >
     <div className={styles.regMenu}>
     <h1 className={styles.h1}>Login</h1>
       <form onSubmit={handleSubmit}>

@@ -11,7 +11,7 @@ export const userRegisterationSchema = Joi.object({
     .required(),
     password:Joi.string()
     .min(8)
-    .max(20)
+    .max(36)
     .pattern(/^[a-zA-Z0-9_-]+$/)
     .required()
     .custom((value, helpers) => {

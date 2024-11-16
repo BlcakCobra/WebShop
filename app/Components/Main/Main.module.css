@@ -1,0 +1,11 @@
+.Maim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 88.5vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: #f9f5f2;
+}

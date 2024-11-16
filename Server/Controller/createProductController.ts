@@ -4,9 +4,8 @@ import Product from "../models/products";
 import { productValidationSchema } from "../validation/productValidations";
 
 export const createProductController = async (req: Request, res: Response) => {
-    const { sex, type, image, color, description, size, price, stock, category, createdAt, discount, rating } = req.body;
-    const product = new Product({ sex, type, image, color, description, size, price, stock, category, createdAt, discount, rating });
-    
+    const { sex, type, image, color, description, size, price, stock, category, createdAt, discount, rating,views } = req.body;
+    const product = new Product({ sex, type, image, color, description, size, price, stock, category, createdAt, discount, rating,views  });
     try {
         const { error } = productValidationSchema.validate(req.body);
         if (error) {
