@@ -5,9 +5,10 @@ import { useRouter } from 'next/navigation';
 import { images } from '../../Images/images';
 
 import styles from "./Profile.module.css"
+import { NavProfileType } from '../../types/ComponentsType';
 
-export default function NavProfile() {
-    const [settingsMenu, setSettingsMenu] = useState(false);
+const NavProfile:React.FC<NavProfileType> = ({openSettingsMenuProfile,settingsMenuProfile}) =>{ 
+
     const [isClient, setIsClient] = useState(false);
     const default_avatar = images.default_avatar
 
@@ -28,16 +29,13 @@ export default function NavProfile() {
         }
       };
 
-      const openSettingsMenu = () => {
-        setSettingsMenu(!settingsMenu);
-      };
-
+     
       if (!isClient) return null; 
        
   return (
-    <li >
-              <img src={default_avatar.src} className={styles.avatar}onMouseEnter={openSettingsMenu}/>
-              {settingsMenu && token &&(
+    <li onClick={openSettingsMenuProfile}>
+              <img src={default_avatar.src} className={styles.avatar}/>
+              {settingsMenuProfile && token &&(
                 <div className={styles.settingsMenu}>
                   <ul>
                     <li className={styles.setMenuUl}>
@@ -52,7 +50,7 @@ export default function NavProfile() {
                   </ul>
                 </div>
               )}
-              {settingsMenu && !token &&(
+              {settingsMenuProfile && !token &&(
                 <div className={styles.settingsMenu}>
                   <ul>
                   <li><Link href="/login" className={styles.a} >Login</Link></li>
@@ -63,3 +61,5 @@ export default function NavProfile() {
             </li>
   )
 }
+
+export default NavProfile

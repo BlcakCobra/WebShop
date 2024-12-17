@@ -23,42 +23,53 @@ export const isAdmin = async (req: Request, res: Response, next: NextFunction): 
   const token = req.header('Authorization')?.replace('Bearer ', '');
 
   if (!token) {
-    logger.warn('Access attempt without a token');
-    res.status(403).json({ message: 'Access denied. No token provided.' });
-    return;
+      logger.warn('Access attempt without a token');
+      res.status(403).json({ success: false, message: 'Access denied. No token provided.' });
+      return;
   }
 
   try {
-    const decoded = jwt.verify(token, process.env.JWT_SECRET as string) as DecodedToken;
-    const user = await User.findById(decoded.id);
+      const secret = process.env.JWT_SECRET;
+      if (!secret) {
+          logger.error('JWT_SECRET is not defined');
+          res.status(500).json({ success: false, message: 'Server configuration error.' });
+          return;
+      }
 
-    if (!user) {
-      logger.warn(`User not found: ${decoded.id}`);
-      res.status(404).json({ message: 'User not found' });
-      return;
-    }
+      const decoded = jwt.verify(token, secret) as DecodedToken;
 
-    if (user.role !== 'admin') {
-      logger.warn(`Access denied for user with ID ${user._id}. Insufficient permissions.`);
-      res.status(403).json({ message: 'Access denied. Admins only.' });
-      return;
-    }
+      logger.info(`Decoded token: ${JSON.stringify(decoded)}`);
 
-    req.user = { id: (user._id as typeof user._id & { toString: () => string }).toString(), role: user.role };
+      if (!decoded?.id) {
+          logger.warn('Invalid token payload');
+          res.status(400).json({ success: false, message: 'Invalid token.' });
+          return;
+      }
 
-    if (decoded.role !== user.role) {
-      const newToken = jwt.sign(
-        { id: user._id, role: user.role },
-        process.env.JWT_SECRET as string,
-        { expiresIn: '1h' }
-      );
-      res.setHeader('Authorization', `Bearer ${newToken}`);
-      logger.info(`Token updated for user ID ${user._id}`);
-    }
+      const user = await User.findById(decoded.id);
+      if (!user) {
+          logger.warn(`User not found: ${decoded.id}`);
+          res.status(404).json({ success: false, message: 'User not found' });
+          return;
+      }
 
-    next();
+      logger.info(`User found: ${user.username}, role: ${user.role}`);
+
+      if (user.role !== 'admin') {
+          logger.warn(`Access denied for user with ID ${user._id}. Insufficient permissions.`);
+          res.status(403).json({ success: false, message: 'Access denied. Admins only.' });
+          return;
+      }
+
+      req.user = { id: user.id.toString(), role: user.role };
+      next();
   } catch (error: any) {
-    logger.error(`Token verification failed: ${error.message}`);
-    res.status(400).json({ message: 'Invalid token.' });
+      if (error.name === 'TokenExpiredError') {
+          logger.error(`Token expired for request: ${req.originalUrl}`);
+          res.status(401).json({ success: false, message: 'Token expired. Please login again.' });
+          return;
+      }
+      logger.error(`Token verification failed: ${error.message}`);
+      res.status(400).json({ success: false, message: 'Invalid token.' });
   }
 };

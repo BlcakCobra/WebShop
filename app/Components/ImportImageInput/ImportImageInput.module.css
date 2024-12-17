@@ -1,0 +1,41 @@
+.importImageBox{
+    width: 300px;
+    height: 200px;
+    margin-top: 25px;
+}
+.importImageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .previewImage {
+    max-width: 200px; 
+    max-height: 200px; 
+  }
+  
+  .fileInput {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .importImageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+    
+  .fileInput {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  

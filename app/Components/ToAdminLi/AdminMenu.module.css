@@ -1,6 +1,84 @@
-.AdminLi{
+.adminButton {
     color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+  .a {
+    font-size: 18px;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s ease;
-    margin-top: 10px;
-}
+  }
+  .settingsMenu {
+    position: absolute;
+    top: 80px; 
+    right: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    width: auto;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .settingsMenu:hover{
+    box-shadow: 0 12px 40px rgba(82, 77, 77, 0.364);
+  }
+  
+  .settingsMenu ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .settingsMenu li {
+    margin: 10px 0;
+  }
+  
+  .settingsMenu Link a ,
+  .settingsMenu button {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .settingsMenu a:hover,
+  .settingsMenu button:hover {
+    color: #1a3d5edd;
+  }
+  .set .profile{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .setMenuUl{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }

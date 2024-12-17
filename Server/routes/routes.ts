@@ -6,10 +6,12 @@ import { getProductsController } from '../Controller/getProductController';
 import { updateProductController } from '../Controller/updateProductController';
 import { deleteProductController } from '../Controller/deleteProductController';
 import { isAdmin } from '../middleWeare/isAdmin';
+import { refreshToken } from '../middleWeare/RefreshToken';
 
 const router = Router();
 
 router.post('/register', registerControl);
+router.post('/refresh-token',refreshToken)
 router.post('/login', loginControll);
 router.get("/products", getProductsController);
 router.post("/products",isAdmin, createProductController);

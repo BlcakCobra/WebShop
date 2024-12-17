@@ -14,7 +14,7 @@ export default function Login() {
   };
   const router = useRouter()  
 
-  console.log(token);
+  console.log;
   useEffect(() =>{
     if(token !== null){
       router.push("/")

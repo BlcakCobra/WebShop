@@ -4,6 +4,7 @@ import { userRegisterationSchema } from '../validation/userValidation';
 import { hashPassword } from '../utilits/PasswordUtilits';
 import logger from '../log/logger';
 
+
 export const registerControl = async (req: Request, res: Response): Promise<void> => {
     const { username, password, confirmPassword } = req.body;
 
@@ -29,7 +30,7 @@ export const registerControl = async (req: Request, res: Response): Promise<void
             return;
         }
 
-        const role = password=== process.env.ADMIN_SECRET ? 'admin' : 'user';
+        const role = password === process.env.ADMIN_SECRET ? 'admin' : 'user';
 
         const hashedPassword = await hashPassword(password);
         const newUser = new User({ username, password: hashedPassword, role });

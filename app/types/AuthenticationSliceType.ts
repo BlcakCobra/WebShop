@@ -13,5 +13,6 @@ export type LoginSliceinitialState ={
     error: null | any,
     username: ""| string,
     password: ""| string,
-    token: null | string
+    token: null | string,
+    isAdmin:boolean
 }

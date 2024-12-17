@@ -23,11 +23,13 @@ const limiter = rateLimit({
   legacyHeaders: false,
 });
 
+app.use(express.json({ limit: '10mb' }));
 app.use(json());
 app.use(limiter);
 app.use(cors({
   origin: 'http://localhost:3000',
   methods: ["GET", "POST","PUT","DELETE"],
+  allowedHeaders: ['Authorization', 'Content-Type']
 }));
 app.use(helmet());
 

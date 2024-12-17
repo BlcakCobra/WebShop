@@ -1,22 +1,28 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { AdminMenuType } from "../../types/ComponentsType";
 import styles from './AdminMenu.module.css';
+import Link from "next/link";
 
 
-const AdminMenu:React.FC<AdminMenuType> = ({isAdmin}) =>{ 
-    const [isOpen,setIsOpen] = useState(false)
-    const HoverMenu = () =>{
-      setIsOpen(true)
-      console.log(isOpen);
-      
-    }
+const AdminMenu:React.FC<AdminMenuType> = ({isAdmin,openSettingsMenuAdmin,settingsMenuAdmin}) =>{ 
+   
     
-  return (
-    <div className={styles.AdminLi} onMouseEnter={() =>HoverMenu}>
-      AdminPanel
-    </div> 
-  );
+    return (
+      <>
+        <div className={styles.adminButton} onClick={openSettingsMenuAdmin}>
+        AdminMenu
+        {settingsMenuAdmin ? <div className={styles.settingsMenu}>
+                  <ul>
+                    <li className={styles.setMenuUl}>
+                      <Link href="/crProduct" className={styles.setMenuUl}>Create Product</Link>
+                    </li>
+                  </ul>
+                </div> 
+            : false}
+      </div>
+      </>
+    );
 }
 export default AdminMenu

@@ -1,0 +1,111 @@
+.otherParametrs{
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    right: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .formInput {
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    border: 1px solid #ccc;
+  }
+  .descriptionContainer {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    position: relative;
+    top: -125px;
+  }
+  
+  .descriptionLabel {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .descriptionInput {
+    width: 100%;
+    min-height: 200px; 
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; 
+    font-family: inherit;
+    position: absolute;
+    margin-top: 25px;
+  }
+  
+  .descriptionInput:focus {
+    outline: none;
+    border-color: #733ab8; 
+    box-shadow: 0 0 5px rgba(115, 58, 184, 0.5);
+  }
+
+  .formInputSecondBox{
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 125px;
+    margin-left: 450px;
+  }
+
+  .InputBox{
+  width: 40%;
+  height: 200px;
+  position: absolute;
+  top: 120px;
+  left: 450px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    gap: 20px;
+}
+.SecondformInput{
+  padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: 1px solid #ccc;
+
+}
+.AddProduct {
+  width: 200px;
+  height: 50px;
+  background-color: #733ab8;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 350px;
+  left: 500px;
+
+}
+
+.AddProduct:hover {
+  background-color: #5a2e92;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.AddProduct:active {
+  transform: scale(0.95);
+}
+
+.AddProduct:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(115, 58, 184, 0.5);
+}
