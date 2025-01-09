@@ -8,9 +8,10 @@ export type ClothingType =
   | "hats" | "scarves" | "belts" | "gloves" | "bags"
   | "sports bras" | "yoga pants" | "tracksuits" | "athletic shorts"
   | "pajamas" | "nightgowns" | "robes"
-  | "bikinis" | "swimsuits" | "swim trunks" | "";
+  | "bikinis" | "swimsuits" | "swim trunks"
+  | "";
 
-export type ClothingSize = "S" | "M" | "L" | "XL" | "XXL";
+export type ClothingSize = "S" | "M" | "L" | "XL" | "XXL" | "";
 
 export interface ProductType {
   sex: "Man" | "Woman" | "Other" | "";
@@ -18,11 +19,11 @@ export interface ProductType {
   image: string;
   color: string;
   description: string | "";
-  size: ClothingSize[] | "";
+  size: ClothingSize | "";
   price: number;
-  stock: number ;
+  stock: number;
   createdAt: string;
-  discount: number | string| "";
+  discount: number | 0;
   rating: number;
   views: number;
 }

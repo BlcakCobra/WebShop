@@ -17,21 +17,23 @@ connectDB().catch(error => {
 });
 
 const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, 
-  max: 100,
-  standardHeaders: true,
-  legacyHeaders: false,
+  windowMs: 60 * 60 * 1000,
+  max: 5000, 
+  standardHeaders: true, 
+  legacyHeaders: false,  
 });
 
-app.use(express.json({ limit: '10mb' }));
+// Middleware
+app.use(express.json({ limit: '1000mb' })); 
 app.use(json());
-app.use(limiter);
 app.use(cors({
-  origin: 'http://localhost:3000',
-  methods: ["GET", "POST","PUT","DELETE"],
-  allowedHeaders: ['Authorization', 'Content-Type']
+  origin: 'http://localhost:3000', 
+  methods: ["GET", "POST", "PUT", "DELETE"], 
+  allowedHeaders: ['Authorization', 'Content-Type'] 
 }));
 app.use(helmet());
+
+app.use('/api', limiter);
 
 app.use('/', router);
 

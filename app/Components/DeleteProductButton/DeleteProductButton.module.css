@@ -1,0 +1,9 @@
+.DeleteBut{
+    width: 75px;
+    height: 25px;
+    background-color: rgba(255, 140, 0, 0.962);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,11 +1,2 @@
-{"level":"error","message":"Token verification failed: jwt expired","timestamp":"2024-12-13T13:00:19.225Z"}
-{"level":"error","message":"Token verification failed: jwt expired","timestamp":"2024-12-13T13:11:54.517Z"}
-{"level":"error","message":"Token verification failed: jwt expired","timestamp":"2024-12-13T13:12:19.092Z"}
-{"level":"error","message":"Token expired for request: /products","timestamp":"2024-12-16T11:58:15.602Z"}
-{"level":"error","message":"Token expired for request: /products","timestamp":"2024-12-16T11:58:37.285Z"}
-{"level":"error","message":"Token expired for request: /products","timestamp":"2024-12-16T11:58:37.544Z"}
-{"level":"error","message":"Token expired for request: /products","timestamp":"2024-12-16T12:33:56.704Z"}
-{"level":"error","message":"Token expired for request: /products","timestamp":"2024-12-16T12:37:44.944Z"}
-{"level":"error","message":"Token expired for request: /products","timestamp":"2024-12-16T12:38:19.847Z"}
-{"level":"error","message":"Token expired for request: /products","timestamp":"2024-12-16T12:38:20.039Z"}
-{"level":"error","message":"Token expired for request: /products","timestamp":"2024-12-16T12:38:20.209Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-01-05T15:14:56.901Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-01-05T15:15:13.860Z"}

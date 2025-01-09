@@ -13,9 +13,9 @@ const router = Router();
 router.post('/register', registerControl);
 router.post('/refresh-token',refreshToken)
 router.post('/login', loginControll);
-router.get("/products", getProductsController);
-router.post("/products",isAdmin, createProductController);
-router.put("/products/:id",isAdmin, updateProductController);
-router.delete("/products/:id",isAdmin, deleteProductController);
+router.get("/getAllProducts", getProductsController);
+router.post("/createProducts",isAdmin, createProductController);
+router.put("/updateProduct/:id",isAdmin, updateProductController);
+router.delete("/deleteProduct/:id",isAdmin, deleteProductController);
 
 export default router;

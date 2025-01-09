@@ -59,8 +59,7 @@ export const RequestesToServer = {
             views,
           };
       
-          const response = await BaseUrl.post("/products", filteredProduct, {
-            
+          const response = await BaseUrl.post("/createProducts", filteredProduct, {
             headers: {
               Authorization: `Bearer ${token}`,
             },
@@ -70,7 +69,7 @@ export const RequestesToServer = {
           if (response.status !== 201) {
             throw new Error(`Failed to create product. Server responded with status: ${response.status}`);
           }
-      
+
           return response.data;
         } catch (error: unknown) {
           if (axios.isAxiosError(error)) {
@@ -88,5 +87,84 @@ export const RequestesToServer = {
             throw new Error("An unexpected error occurred.");
           }
         }
+      },
+      getAllProducts() {
+        try {
+            return BaseUrl.get(`/getAllProducts?_t=${new Date().getTime()}`);
+        } catch (error) {
+            throw new Error(`Something went wrong:${error}`);
+        }
+      },
+      async deleteTheProduct(token: string, id: string) {
+        try {
+          if (!token) {
+            throw new Error("Authorization token is required or not found.");
+          }
+          if (!id) {
+            throw new Error("Product ID is required to delete the product.");
+          }
+      
+          const response = await BaseUrl.delete(`/deleteProduct/${id}`, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          });
+      
+          if (response.status !== 204) {
+            throw new Error(`Failed to delete product. Server responded with status: ${response.status}`);
+          }
+      
+          return "Product successfully deleted."; 
+        } catch (error: unknown) {
+          if (axios.isAxiosError(error)) {
+            console.error("Error deleting product:", error.message);
+            if (error.response) {
+              throw new Error(`Server error: ${error.response.data.message || error.response.statusText}`);
+            } else if (error.request) {
+              throw new Error("No response received from server.");
+            }
+          }
+          if (error instanceof Error) {
+            console.error("Unexpected error:", error.message);
+            throw new Error(`Unexpected error: ${error.message}`);
+          }
+          console.error("Unexpected error:", error);
+          throw new Error("An unexpected error occurred.");
+        }
+      },
+      updateData(token: string, id: string, updatedData: any) {
+        try {
+          if (!token) {
+            throw new Error("Authorization token is required.");
+          }
+          if (!id) {
+            throw new Error("Product ID is required.");
+          }
+          if (!updatedData || Object.keys(updatedData).length === 0) {
+            throw new Error("Updated data is required.");
+          }
+      
+          return BaseUrl.put(`/updateProduct/${id}`, updatedData, {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          });
+        } catch (error: unknown) {
+          if (axios.isAxiosError(error)) {
+            console.error("Error updating product:", error.message);
+            if (error.response) {
+              throw new Error(`Server error: ${error.response.data.message || error.response.statusText}`);
+            } else if (error.request) {
+              throw new Error("No response received from server.");
+            }
+          } else if (error instanceof Error) {
+            console.error("Unexpected error:", error.message);
+            throw new Error(`Unexpected error: ${error.message}`);
+          } else {
+            console.error("Unexpected error:", error);
+            throw new Error("An unexpected error occurred.");
+          }
+        }
       }
-};
+      
+};  

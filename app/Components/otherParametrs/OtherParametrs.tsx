@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styles from "./OtherParametrs.module.css";
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import { OtherParametrsTypes } from '../../types/ComponentsType';
-import { AsyncProductSlice } from '../../store/Slices/ProductSlice';
+import { AsyncProductSlice } from '../../store/Slices/CreateProductSlice';
 
 const OtherParametrs: React.FC<OtherParametrsTypes> = ({ handleChangeSexValue, handleChangeClothingTypeValue,handleChangeStock, handleChangeClothingTypeSize,handlePickColor ,handleDescriptionChange,handleChangePrice}) => {
   const product = useAppSelector((state) => state.ProductSlice.product);
@@ -41,28 +41,27 @@ const OtherParametrs: React.FC<OtherParametrsTypes> = ({ handleChangeSexValue, h
 
   
   useEffect(() => {
-    if (isAdmin && token && sex && type && price && stock && size && color && description) {
-      const currentDate = new Date().toISOString();
+    if (isAdmin && token && sex && type && price && stock && size && color) {
       const productData = {
         sex,
         type,
         image,
         color,
-        description,
+        description: description || "No description provided",
         size,
         price,
         stock,
-        createdAt: currentDate, 
-        discount,
-        rating,
-        views,
+        createdAt: new Date().toISOString(),
+        discount: discount || 0,
+        rating: rating || 0,
+        views: views || 0,
       };
-  
       dispath(AsyncProductSlice({ token, productData }));
     } else {
-      console.log("Product data is incomplete.");
+      console.warn("Product data is incomplete:", { sex, type, price, stock, size, color, description });
     }
   }, []);
+  
   
   return (
     <div className={styles.otherParametrs}>
@@ -106,7 +105,7 @@ const OtherParametrs: React.FC<OtherParametrsTypes> = ({ handleChangeSexValue, h
 
       <input
         type="color"
-        value={color}
+        value={color || "#000000"}
         onChange={handlePickColor}
         className={styles.formInput}
       />
