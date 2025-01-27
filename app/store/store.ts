@@ -4,6 +4,7 @@ import LoginSlice from "./Slices/LoginSlice"
 import ProductSlice from "./Slices/CreateProductSlice"
 import gettingProductSlice from "./Slices/GettingProductSlice"
 import {deleteProductReducer} from "./Slices/DeleteProductSlice"
+import UpdateProductSluce from "./Slices/updateProductSlice"
 
 import { TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
 
@@ -13,7 +14,8 @@ export const store = configureStore({
         login:LoginSlice,
         ProductSlice:ProductSlice,
         gettingProductSlice:gettingProductSlice,
-        deleteProductSlice:deleteProductReducer
+        deleteProductSlice:deleteProductReducer,
+        updateProductSlice:UpdateProductSluce
     }       
 })
 

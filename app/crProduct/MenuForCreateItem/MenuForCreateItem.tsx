@@ -13,7 +13,7 @@ import {
   setPrice,
   setStock,
 } from "../../store/Slices/CreateProductSlice";
-import { useAppDispatch } from "../../store/store";
+import { useAppDispatch, useAppSelector } from "../../store/store";
 
 
 
@@ -29,6 +29,8 @@ export default function MenuForCreateItem({
     setMenuForCreateItem(false);
     setErrorMessage("");
   };
+    
+    const {image} = useAppSelector(state => state.ProductSlice.product)
 
   const handleImageUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -42,6 +44,7 @@ export default function MenuForCreateItem({
       reader.readAsDataURL(file);
     }
   };
+  
 
   const handleChange =
     (setStateFunc: any) =>
@@ -70,7 +73,7 @@ export default function MenuForCreateItem({
               </button>
               <h2>Create Product</h2>
               <p>Add details for new Product</p>
-              <ImportImageInput handleImageUpload={handleImageUpload} errorMessage={""} />
+              <ImportImageInput handleImageUpload={handleImageUpload} image={image}/>
               <OtherParametrs
                 handleChangeSexValue={handleChange(selectSex)}
                 handleChangeClothingTypeValue={handleChange(selectClothsType)}

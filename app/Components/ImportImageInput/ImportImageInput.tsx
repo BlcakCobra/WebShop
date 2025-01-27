@@ -3,10 +3,7 @@ import styles from "./ImportImageInput.module.css"
 import { useAppSelector } from '../../store/store'
 import { ImportImageInputType } from '../../types/ComponentsType'
 
-const ImportImageInput:React.FC<ImportImageInputType> = ({handleImageUpload,errorMessage}) => {
-  const product = useAppSelector((state) => state.ProductSlice).product;
-  
-  const image = product?.image || "";
+const ImportImageInput:React.FC<ImportImageInputType> = ({handleImageUpload,image}) => {
 
   return (
     <div className={styles.importImageBox}>

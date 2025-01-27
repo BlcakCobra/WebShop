@@ -3,6 +3,7 @@ import styles from "./GetAllProducts.module.css";
 import { useAppDispatch, useAppSelector } from "../../store/store";
 import { AsyncGettingProductSlice } from "../../store/Slices/GettingProductSlice";
 import DeleteProductButton from "../DeleteProductButton/DeleteProductButton";
+import UpdateProduct from "../UpdateProduct/UpdateProduct";
 
 export default function GetAllProducts() {
     const { products } = useAppSelector((state) => state.gettingProductSlice);
@@ -42,6 +43,9 @@ export default function GetAllProducts() {
                               <DeleteProductButton
                               id={el._id}
                               />
+                              {/* <UpdateProduct
+                              id={el._id}
+                              /> */}
                           </div>
                       </div>
                   ))

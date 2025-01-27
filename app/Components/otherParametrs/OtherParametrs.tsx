@@ -6,7 +6,8 @@ import { AsyncProductSlice } from '../../store/Slices/CreateProductSlice';
 
 const OtherParametrs: React.FC<OtherParametrsTypes> = ({ handleChangeSexValue, handleChangeClothingTypeValue,handleChangeStock, handleChangeClothingTypeSize,handlePickColor ,handleDescriptionChange,handleChangePrice}) => {
   const product = useAppSelector((state) => state.ProductSlice.product);
-
+  const updatedProduct = useAppSelector((state) => state.updateProductSlice.updatedProduct);
+  
   const sex = product?.sex || "";
   const type = product?.type || "";
   const image = product?.image || "";
@@ -41,7 +42,7 @@ const OtherParametrs: React.FC<OtherParametrsTypes> = ({ handleChangeSexValue, h
 
   
   useEffect(() => {
-    if (isAdmin && token && sex && type && price && stock && size && color) {
+    if (isAdmin && token && description && sex && type && price && stock && size && color) {
       const productData = {
         sex,
         type,

@@ -20,7 +20,7 @@ export interface NavProfileType{
 
 export interface ImportImageInputType {
     handleImageUpload: (event: ChangeEvent<HTMLInputElement>) => void; 
-    errorMessage: string;
+    image:string
   }
 
   export interface OtherParametrsTypes {
@@ -33,3 +33,6 @@ export interface ImportImageInputType {
     handleChangeStock: (e: React.ChangeEvent<HTMLInputElement>) => void;  
 }
   
+export interface UpdateProductType {
+    id:string
+}
