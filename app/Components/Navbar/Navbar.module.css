@@ -85,3 +85,13 @@
       color: white;
   }
 }
+.ElementNavbarBox{
+  width: auto;
+  height: 50px;
+  display: flex;
+  flex-direction:row;
+  z-index: 2;
+  position: absolute;
+  left: 25%;
+  top: 7%;
+}

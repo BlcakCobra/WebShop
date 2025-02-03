@@ -14,6 +14,7 @@ export type ClothingType =
 export type ClothingSize = "S" | "M" | "L" | "XL" | "XXL" | "";
 
 export interface ProductType {
+  [x: string]: ReactNode;
   sex: "Man" | "Woman" | "Other" | "";
   type: ClothingType;
   image: string;

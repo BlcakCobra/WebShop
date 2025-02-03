@@ -1,23 +1,31 @@
+"use client";
+
 import React, { useEffect } from "react";
-import styles from "./GetAllProducts.module.css";
 import { useAppDispatch, useAppSelector } from "../../store/store";
-import { AsyncGettingProductSlice } from "../../store/Slices/GettingProductSlice";
-import DeleteProductButton from "../DeleteProductButton/DeleteProductButton";
+import { AsyncProductsWithSpecificTypeSlice } from "../../store/Slices/ProductsWithSpecificTypeSlice";
+import { useParams } from "next/navigation";
 
-export default function GetAllProducts() {
-    const { products } = useAppSelector((state) => state.gettingProductSlice);
-
+import styles from "./ProductCategoryPage.module.css"
+export default function Page() {
+    const params = useParams();
+    const category = params?.category as string;
     const dispatch = useAppDispatch();
+    const { sortByTypeList, loading, error } = useAppSelector((state) => state.ProductsWithSpecificType);
+
     useEffect(() => {
-        dispatch(AsyncGettingProductSlice());
+        dispatch(AsyncProductsWithSpecificTypeSlice(category));
     }, []);
     
-    
+    console.log(sortByTypeList);
 
     return (
-        <>
-        {products
-                ? products.map((el) => (
+    <div className={styles.Main}>
+        <div className={styles.colum}>
+        <div className={styles.row}>
+
+
+            {sortByTypeList
+                ? sortByTypeList.map((el) => (
                       <div key={el._id} className={styles.ProductBox}>
                           <img
                               className={styles.ProductImage}
@@ -38,16 +46,12 @@ export default function GetAllProducts() {
 
                               <div className={styles.ProductDetails}>{el.description}</div>
                               <div className={styles.ProductDetails}>Type: {el.type}</div>
-                              <DeleteProductButton
-                              id={el._id}
-                              />
-                              {/* <UpdateProduct
-                              id={el._id}
-                              /> */}
                           </div>
                       </div>
                   ))
                 : <p>No products available</p>}
-        </>
+      </div>
+      </div>
+      </div>
     );
 }

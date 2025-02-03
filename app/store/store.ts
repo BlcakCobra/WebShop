@@ -7,6 +7,7 @@ import {deleteProductReducer} from "./Slices/DeleteProductSlice"
 import UpdateProductSluce from "./Slices/updateProductSlice"
 
 import { TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
+import  ProductsWithSpecificType from "../store/Slices/ProductsWithSpecificTypeSlice";
 
 export const store = configureStore({
     reducer:{
@@ -15,7 +16,8 @@ export const store = configureStore({
         ProductSlice:ProductSlice,
         gettingProductSlice:gettingProductSlice,
         deleteProductSlice:deleteProductReducer,
-        updateProductSlice:UpdateProductSluce
+        updateProductSlice:UpdateProductSluce,
+        ProductsWithSpecificType:ProductsWithSpecificType
     }       
 })
 

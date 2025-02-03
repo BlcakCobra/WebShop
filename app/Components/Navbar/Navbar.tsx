@@ -8,6 +8,7 @@ import Burger from '../Burger/Burger';
 import AdminMenu from '../ToAdminLi/AdminMenu';
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import { checkIfAdmin } from '../../store/Slices/LoginSlice';
+import ClothingList from './ClothingList/ClothingList';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,6 +41,9 @@ const Navbar = () => {
       <Link href="/">
         <img src={images.logo.src} className={styles.logo} alt="Logo" />
       </Link>
+      <div className={styles.ElementNavbarBox}>
+        <ClothingList/>
+      </div>
       <div className={`${styles.menu} ${isOpen ? styles.active : ''}`}>
         {isAdmin && (
           <AdminMenu
