@@ -6,12 +6,11 @@ import styles from "./MenuForCreateItem.module.css";
 import {
   updateImage,
   selectSex,
+  selectName,
   selectClothsType,
   selectColor,
   selectClothsSize,
-  setDescription,
   setPrice,
-  setStock,
 } from "../../store/Slices/CreateProductSlice";
 import { useAppDispatch, useAppSelector } from "../../store/store";
 
@@ -79,9 +78,8 @@ export default function MenuForCreateItem({
                 handleChangeClothingTypeValue={handleChange(selectClothsType)}
                 handlePickColor={handleChange(selectColor)}
                 handleChangeClothingTypeSize={handleChange(selectClothsSize)}
-                handleDescriptionChange={handleChange(setDescription)}
                 handleChangePrice={handleChange(setPrice)}
-                handleChangeStock={handleChange(setStock)}
+                handleChangeName={handleChange(selectName)}
               />
             </div>
           </form>

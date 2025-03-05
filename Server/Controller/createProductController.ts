@@ -4,7 +4,7 @@ import Product from "../models/products";
 import { productValidationSchema } from "../validation/productValidations";
 
 export const createProductController = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
-    const { sex, type, image, color, description, size, price, stock, createdAt, discount, rating, views } = req.body;
+    const {name, sex, type, image, color, size, price,  discount, rating, views } = req.body;
 
     try {
         const { error } = productValidationSchema.validate(req.body);
@@ -14,7 +14,7 @@ export const createProductController = async (req: Request, res: Response, next:
             return;
         }
 
-        const product = new Product({ sex, type, image, color, description, size, price, stock, createdAt, discount, rating, views });
+        const product = new Product({ name, sex, type, image, color, size, price,  discount, rating, views });
         const savedProduct = await product.save();
 
         const { _id, ...rest } = savedProduct.toObject();

@@ -35,8 +35,6 @@ export default function GetAllProducts() {
                                   className={styles.ProductColor}
                                   style={{ backgroundColor: el.color }}
                               ></div>
-
-                              <div className={styles.ProductDetails}>{el.description}</div>
                               <div className={styles.ProductDetails}>Type: {el.type}</div>
                               <DeleteProductButton
                               id={el._id}

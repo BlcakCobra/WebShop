@@ -1,7 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { RequestesToServer } from '../../api/api';
 
-// Delete product state
 interface DeleteProductState {
   loading: boolean;
   success: boolean;

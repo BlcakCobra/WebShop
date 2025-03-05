@@ -28,9 +28,8 @@ export interface ImportImageInputType {
     handleChangeClothingTypeValue: (e: React.ChangeEvent<HTMLSelectElement>) => void;
     handlePickColor: (e: React.ChangeEvent<HTMLInputElement>) => void;
     handleChangeClothingTypeSize: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-    handleDescriptionChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
     handleChangePrice: (e: React.ChangeEvent<HTMLInputElement>) => void;  
-    handleChangeStock: (e: React.ChangeEvent<HTMLInputElement>) => void;  
+    handleChangeName:(e: React.ChangeEvent<HTMLInputElement>) => void;  
 }
   
 export interface UpdateProductType {

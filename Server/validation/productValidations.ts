@@ -12,16 +12,15 @@ const clothingTypes =[
   "pajamas", "nightgowns", "robes",
   "bikinis", "swimsuits", "swim trunks"
 ]
+
 export const productValidationSchema = Joi.object({
+  name:Joi.string().required(),
   sex: Joi.string().valid("Man", "Woman", "Other").required(),
   type: Joi.string().valid(...clothingTypes).required(),
   image: Joi.string().uri().required(),
   color: Joi.string().pattern(/^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/).required(),
-  description: Joi.string().min(10).max(150).allow(""),
   size: Joi.string().required().valid("S", "M", "L", "XL", "XXL"),
   price: Joi.number().min(0).required(),
-  stock: Joi.number().min(0).required(),
-  createdAt: Joi.string().isoDate().default(() => new Date().toISOString()),
   discount: Joi.number().min(0).max(100).allow(""),
   rating: Joi.number().min(0).max(5).default(0),
   views: Joi.number().min(0).default(0),

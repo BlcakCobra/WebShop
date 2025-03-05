@@ -1,6 +1,5 @@
 import axios from "axios";
 import { FilteredProductType, ProductType } from "../types/ProductSliceType";
-import { string } from "joi";
 
 const BaseUrl = axios.create({
     baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001/'
@@ -31,30 +30,26 @@ export const RequestesToServer = {
           }
       
           const {
+            name,
             sex,
             type,
             image,
             color,
-            description,
             size,
             price,
-            stock,
-            createdAt,
             discount,
             rating,
             views,
           }: FilteredProductType = product;
       
           const filteredProduct = {
+            name,
             sex,
             type,
             image,
             color,
-            description,
             size,
             price,
-            stock,
-            createdAt,
             discount,
             rating,
             views,
@@ -173,6 +168,29 @@ export const RequestesToServer = {
               throw new Error("can't find type of product");
           }
           return BaseUrl.get(`/productType/${type}`)
+        } catch (error) {
+          if (axios.isAxiosError(error)) {
+            console.error("Error creating product:", error.message);
+            if (error.response) {
+              throw new Error(`Server error: ${error.response.data.message || error.response.statusText}`);
+            } else if (error.request) {
+              throw new Error("No response received from server.");
+            }
+          } else if (error instanceof Error) {
+            console.error("Unexpected error:", error.message);
+            throw new Error(`Unexpected error: ${error.message}`);
+          } else {
+            console.error("Unexpected error:", error);
+            throw new Error("An unexpected error occurred.");
+          }
+        }
+      },
+      getProductById(id:string){
+        try {
+          if(!id){
+            throw new Error
+          }
+          return BaseUrl.get(`product/${id}`)
         } catch (error) {
           if (axios.isAxiosError(error)) {
             console.error("Error creating product:", error.message);

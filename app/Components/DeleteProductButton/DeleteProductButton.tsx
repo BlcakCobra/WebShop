@@ -1,8 +1,8 @@
-import React from 'react';
+import { useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../store/store';
-import { AsyncDeleteProductSlice } from '../../store/Slices/DeleteProductSlice';
-import styles from "./DeleteProductButton.module.css"
-
+import { AsyncDeleteProductSlice, resetSuccess } from '../../store/Slices/DeleteProductSlice';
+import { AsyncGettingProductSlice} from "./../../store/Slices/GettingProductSlice"
+import styles from "./DeleteProductButton.module.css";
 
 interface DeleteProductButtonType {
   id: string;
@@ -10,23 +10,24 @@ interface DeleteProductButtonType {
 
 const DeleteProductButton: React.FC<DeleteProductButtonType> = ({ id }) => {
   const dispatch = useAppDispatch();
-
-  const { loading, error } = useAppSelector((state) => state.deleteProductSlice);
+  const { loading, error, success } = useAppSelector((state) => state.deleteProductSlice);
 
   const handleDeleteProduct = async () => {
-    try {
-      const token = localStorage.getItem('token');
-      if (!token) {
-        console.error('Token not found');
-        return;
-      }
-
-      await dispatch(AsyncDeleteProductSlice({ token, id }));
-      console.log(`Product with id ${id} deleted successfully`);
-    } catch (error) {
-      console.error('Error deleting product:', error);
+    const token = localStorage.getItem('token');
+    if (!token) {
+      console.error('Token not found');
+      return;
     }
+
+    await dispatch(AsyncDeleteProductSlice({ token, id }));
   };
+
+  useEffect(() => {
+    if (success) {
+      dispatch(AsyncGettingProductSlice());
+      dispatch(resetSuccess());
+    }
+  }, [success, dispatch]);
 
   return (
     <div>

@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type ClothingType =
   | "t-shirts" | "blouses" | "shirts" | "hoodies" | "sweatshirts" | "tank tops"
   | "jeans" | "shorts" | "trousers" | "pants" | "skirts" | "leggings"
@@ -14,16 +16,14 @@ export type ClothingType =
 export type ClothingSize = "S" | "M" | "L" | "XL" | "XXL" | "";
 
 export interface ProductType {
-  [x: string]: ReactNode;
+  [x: string]: any;
+  name:string
   sex: "Man" | "Woman" | "Other" | "";
   type: ClothingType;
   image: string;
   color: string;
-  description: string | "";
   size: ClothingSize | "";
   price: number;
-  stock: number;
-  createdAt: string;
   discount: number | 0;
   rating: number;
   views: number;

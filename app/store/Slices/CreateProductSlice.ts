@@ -10,15 +10,13 @@ interface initialStateType {
 
 const initialState: initialStateType = {
   product: {
+    name:"",
     sex: "",
     type: "", 
     image: "",
     color: "",
-    description: "",
     size: "",
     price: 0,
-    stock: 0,
-    createdAt: new Date().toISOString(),
     discount: 0,
     rating: 0,
     views: 0,
@@ -57,6 +55,11 @@ const ProductSlice = createSlice({
         state.product.sex = action.payload;
       }
     },
+    selectName: (state, action: PayloadAction<string>) => {
+      if (state.product) {
+        state.product.name = action.payload;
+      }
+    },
     selectClothsType: (state, action: PayloadAction<ClothingType>) => {
       if (state.product) {
         state.product.type = action.payload;
@@ -72,19 +75,9 @@ const ProductSlice = createSlice({
         state.product.color = action.payload;
       }
     },
-    setDescription: (state, action: PayloadAction<string>) => {
-      if (state.product) {
-        state.product.description = action.payload;
-      }
-    },
     setPrice: (state, action: PayloadAction<number>) => {
       if (state.product) {
         state.product.price = action.payload;
-      }
-    },
-    setStock: (state, action: PayloadAction<number>) => {
-      if (state.product) {
-        state.product.stock = action.payload;
       }
     },
     resetProduct: (state) => {
@@ -100,8 +93,6 @@ const ProductSlice = createSlice({
       .addCase(AsyncProductSlice.fulfilled, (state, action: PayloadAction<ProductType>) => {
         state.loading = false;
         state.product = action.payload;
-
-        state.product = { ...initialState.product };
       })
       .addCase(AsyncProductSlice.rejected, (state, action) => {
         state.loading = false;
@@ -114,11 +105,10 @@ export default ProductSlice.reducer;
 export const {
   updateImage,
   selectSex,
-  setStock,
+  selectName,
   selectClothsType,
   setPrice,
   selectClothsSize,
   selectColor,
-  setDescription,
   resetProduct,
 } = ProductSlice.actions;

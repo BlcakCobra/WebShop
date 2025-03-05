@@ -71,11 +71,7 @@ const UpdateProductSlice = createSlice({
               state.updatedProduct.price = action.payload;
             }
           },
-          setStock: (state, action: PayloadAction<number>) => {
-            if (state.updatedProduct) {
-              state.updatedProduct.stock = action.payload;
-            }
-          }
+
     },
     extraReducers:(builder) =>{
         builder
@@ -96,7 +92,6 @@ export default UpdateProductSlice.reducer
 export const {
   updateImage,
   selectSex,
-  setStock,
   selectClothsType,
   setPrice,
   selectClothsSize,
