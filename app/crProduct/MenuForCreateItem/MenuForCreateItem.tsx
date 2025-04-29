@@ -62,26 +62,29 @@ export default function MenuForCreateItem({
               handleSubmit()
             }}
           >
-            <div className={styles.createItemMenu}>
-              <button
-                type="button"
-                className={styles.closeMenu}
-                onClick={closeMenuForCreateItem}
-              >
-                ×
-              </button>
-              <h2>Create Product</h2>
-              <p>Add details for new Product</p>
-              <ImportImageInput handleImageUpload={handleImageUpload} image={image}/>
-              <OtherParametrs
-                handleChangeSexValue={handleChange(selectSex)}
-                handleChangeClothingTypeValue={handleChange(selectClothsType)}
-                handlePickColor={handleChange(selectColor)}
-                handleChangeClothingTypeSize={handleChange(selectClothsSize)}
-                handleChangePrice={handleChange(setPrice)}
-                handleChangeName={handleChange(selectName)}
-              />
-            </div>
+<div className={styles.createItemMenu}>
+  <button
+    type="button"
+    className={styles.closeMenu}
+    onClick={closeMenuForCreateItem}
+  >
+    ×
+  </button>
+  <h2>Create Product</h2>
+  <p>Add details for new Product</p>
+
+  <div className={styles.menuContent}>
+    <ImportImageInput handleImageUpload={handleImageUpload} image={image} />
+    <OtherParametrs
+      handleChangeSexValue={handleChange(selectSex)}
+      handleChangeClothingTypeValue={handleChange(selectClothsType)}
+      handlePickColor={handleChange(selectColor)}
+      handleChangeClothingTypeSize={handleChange(selectClothsSize)} 
+      handleChangePrice={handleChange(setPrice)}
+      handleChangeName={handleChange(selectName)}
+    />
+    </div>
+  </div>
           </form>
         </>
       )}

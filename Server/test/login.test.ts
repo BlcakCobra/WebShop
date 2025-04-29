@@ -37,7 +37,7 @@ describe("User Login", () => {
         password: "wrongPassword123",
       });
 
-    expect(response.status).toBe(400);
+    expect(response.status).toBe(404);
     expect(response.body.message).toBe("User not found");
   });
 

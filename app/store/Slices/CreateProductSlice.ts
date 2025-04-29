@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import { ProductType, ClothingSize, ClothingType } from "../../types/ProductSliceType";
 import { RequestesToServer } from "../../api/api";
+import { setProductId } from "./CreateProductDetailsSlice";
 
 interface initialStateType {
   product: ProductType;
@@ -27,14 +28,17 @@ const initialState: initialStateType = {
 
 export const AsyncProductSlice = createAsyncThunk(
   "AsyncProductSlice",
-  async (args: { token: string; productData: ProductType }, { rejectWithValue }) => {
+  async (args: { token: string; productData: ProductType }, {dispatch, rejectWithValue }) => {
     const { token, productData } = args;
     try {
       const res = await RequestesToServer.CreateProductReq(token, productData);
       if (res.status !== 200) {
         throw new Error(`Product creation failed with status ${res.status}`);
       }
-      return res.data;
+        dispatch(setProductId(res.data.id));
+
+        return res.data;
+      
     } catch (error: any) {
       return rejectWithValue(error.message);
     }

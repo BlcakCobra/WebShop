@@ -1,8 +1,9 @@
+"use client"
 import React from 'react'
 import OtherParametrs from '../otherParametrs/OtherParametrs';
 import ImportImageInput from '../ImportImageInput/ImportImageInput';
 
-import { selectSex,selectClothsType,selectColor,selectClothsSize,setDescription ,setPrice,setStock, AsyncUpdateProductSlice, updateImage} from '../../store/Slices/updateProductSlice';
+import { selectSex,selectClothsType,selectColor,selectClothsSize,setDescription ,setPrice,AsyncUpdateProductSlice, updateImage} from '../../store/Slices/updateProductSlice';
 import styles from "./UpdateProduct.module.css"
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import { ProductType } from '../../types/ProductSliceType';

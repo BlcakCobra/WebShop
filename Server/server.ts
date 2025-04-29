@@ -23,7 +23,6 @@ const limiter = rateLimit({
   legacyHeaders: false,  
 });
 
-// Middleware
 app.use(express.json({ limit: '1000mb' })); 
 app.use(json());
 app.use(cors({

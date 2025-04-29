@@ -1,42 +1,91 @@
 .otherParametrs {
-  width: 70%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  align-items: center;
+  gap: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.formInput, .SecondformInput {
+.formInput,
+.SecondformInput {
   width: 100%;
-  max-width: 400px;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
+  transition: border 0.3s ease-in-out;
+  background-color: white;
 }
 
-.descriptionContainer {
-  width: 100%;
-  max-width: 600px;
+.formInput:focus,
+.SecondformInput:focus {
+  border-color: #733ab8;
+  outline: none;
 }
 
-.descriptionInput {
+.selectWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selectWrapper select {
   width: 100%;
-  min-height: 150px;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  resize: vertical;
-  font-size: 14px;
-  font-family: inherit;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  transition: border 0.3s ease-in-out;
+}
+
+.selectWrapper select:focus {
+  border-color: #733ab8;
+  outline: none;
+}
+
+.colorPicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.colorPicker input {
+  width: 50px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.priceBox input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  transition: border 0.3s ease-in-out;
+}
+
+.priceBox input:focus {
+  border-color: #733ab8;
+  outline: none;
 }
 
 .AddProduct {
   width: 100%;
-  max-width: 250px;
-  height: 50px;
+  padding: 14px;
   background-color: #733ab8;
   color: white;
   font-size: 16px;
@@ -62,16 +111,5 @@
 @media (max-width: 768px) {
   .otherParametrs {
     width: 90%;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .formInput, .SecondformInput {
-    width: 100%;
-  }
-  
-  .AddProduct {
-    width: 100%;
-    max-width: 100%;
   }
 }

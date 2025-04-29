@@ -34,6 +34,7 @@ export default function Page() {
                                 <img className={styles.ProductImage} src={el.image} alt="Product" />
                                 <div className={styles.ProductInfo}>
                                     <div className={styles.ProductPrice}>${el.price}</div>
+                                    <div>{el.name}</div>
                                     <div className={styles.ProductRating}>Rating: {el.rating} ⭐</div>
                                     <div className={styles.ProductDetails}>For: {el.sex}</div>
                                     <div className={styles.ProductDetails}>Size: {el.size}</div>

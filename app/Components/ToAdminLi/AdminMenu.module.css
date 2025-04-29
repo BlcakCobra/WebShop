@@ -1,84 +1,73 @@
-.adminButton {
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.adminMenuContainer {
+  position: relative;
+  display: inline-block;
 }
-  
-  .a {
-    font-size: 18px;
-    color: #000000;
-    text-decoration: none;
-    transition: color 0.3s ease;
+
+.adminButton {
+  background-color: #1f2937; 
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.adminButton:hover {
+  background-color: #374151;
+  transform: scale(1.03);
+}
+
+.settingsMenu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  min-width: 180px;
+  z-index: 100;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
   }
-  .settingsMenu {
-    position: absolute;
-    top: 80px; 
-    right: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 10px;
-    width: auto;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .settingsMenu:hover{
-    box-shadow: 0 12px 40px rgba(82, 77, 77, 0.364);
-  }
-  
-  .settingsMenu ul {
-    list-style: none;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .settingsMenu li {
-    margin: 10px 0;
-  }
-  
-  .settingsMenu Link a ,
-  .settingsMenu button {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-    width: 100%;
-    text-align: left;
-  }
-  
-  .settingsMenu a:hover,
-  .settingsMenu button:hover {
-    color: #1a3d5edd;
-  }
-  .set .profile{
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-  }
-  
-  .setMenuUl{
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-  }
+}
+
+.settingsMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.setMenuUl {
+  font-size: 16px;
+  color: #1f2937;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.setMenuUl:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}

@@ -24,7 +24,7 @@ const NavProfile:React.FC<NavProfileType> = ({openSettingsMenuProfile,settingsMe
         if(token){
           if (typeof window !== 'undefined' && isClient) {
             localStorage.removeItem("token");
-            router.refresh();
+            setTimeout(() => router.refresh(), 100); 
           }
         }
       };

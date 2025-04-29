@@ -8,6 +8,9 @@ import UpdateProductSluce from "./Slices/updateProductSlice"
 import GetProductByIdSlice from "./Slices/GetProductByIdSlice"
 import { TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
 import  ProductsWithSpecificType from "../store/Slices/ProductsWithSpecificTypeSlice";
+import CreateProductDetailsSlice from "./Slices/CreateProductDetailsSlice"
+import SearchAnythingSlice from "./Slices/SearchAnythingSlice"
+import SearchResaultFilterSlice from "./Slices/SearchResaultFilterSlice"
 
 export const store = configureStore({
     reducer:{
@@ -16,10 +19,12 @@ export const store = configureStore({
         ProductSlice:ProductSlice,
         gettingProductSlice:gettingProductSlice,
         deleteProductSlice:deleteProductReducer,
-        updateProductSlice:UpdateProductSluce,
         ProductsWithSpecificType:ProductsWithSpecificType,
-        GetProductByIdSlice:GetProductByIdSlice
-    }       
+        GetProductByIdSlice:GetProductByIdSlice,
+        CreateProductDetailsSlice:CreateProductDetailsSlice,
+        SearchAnythingSlice:SearchAnythingSlice,
+        SearchResaultFilterSlice:SearchResaultFilterSlice
+        }       
 })
 
 export type AppDispatch = typeof store.dispatch;

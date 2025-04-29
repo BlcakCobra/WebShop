@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from 'react';
 import styles from "./OtherParametrs.module.css";
 import { useAppDispatch, useAppSelector } from '../../store/store';
@@ -13,7 +14,6 @@ const OtherParametrs: React.FC<OtherParametrsTypes> = ({
   handleChangePrice
 }) => {
   const product = useAppSelector((state) => state.ProductSlice.product);
-  const updatedProduct = useAppSelector((state) => state.updateProductSlice.updatedProduct);
   
   const name = product?.name || "";
   const sex = product?.sex || "";
@@ -45,26 +45,31 @@ const OtherParametrs: React.FC<OtherParametrsTypes> = ({
 
   const token = localStorage.getItem("token");
 
-  useEffect(() => {
-    if (isAdmin && token && sex && type && price && size && color) {
-      const productData = {
-        name,
-        sex,
-        type,
-        image,
-        color,
-        size,
-        price,
-        discount: discount || 0,
-        rating: rating || 0,
-        views: views || 0,
-      };
-      dispatch(AsyncProductSlice({ token, productData })); 
-    } else {
+  const handleAddProduct = () => {
+    if (!isAdmin || !token || !sex || !type || !price || !size || !color) {
       console.warn("Product data is incomplete:", { sex, type, price, size, color });
+      return;
     }
-  }, []);
-
+  
+    const productData = {
+      name,
+      sex,
+      type,
+      image,
+      color,
+      size,
+      price,
+      discount: discount || 0,
+      rating: rating || 0,
+      views: views || 0,
+    };
+  
+    dispatch(AsyncProductSlice({ token, productData }));
+    console.log("Add Prod");
+  };
+  useEffect(() =>{
+    console.log("123");
+  },[])
   return (
     <div className={styles.otherParametrs}>
       <input
@@ -128,7 +133,7 @@ const OtherParametrs: React.FC<OtherParametrsTypes> = ({
         />
       </div>
 
-      <button className={styles.AddProduct} type="submit">
+      <button className={styles.AddProduct} type="submit" >
         Add Product
       </button>
     </div>

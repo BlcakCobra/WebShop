@@ -26,6 +26,7 @@ export default function GetAllProducts() {
                           />
                           <div className={styles.ProductInfo}>
                               <div className={styles.ProductPrice}>${el.price}</div>
+                              <div>{el.name}</div>
                               <div className={styles.ProductRating}>
                                   Rating: {el.rating} ⭐
                               </div>

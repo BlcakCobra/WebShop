@@ -5,10 +5,11 @@ import styles from './Navbar.module.css';
 import { images } from "../../Images/images";
 import NavProfile from '../Profile/Profile';
 import Burger from '../Burger/Burger';
-import AdminMenu from '../ToAdminLi/AdminMenu';
+import {AdminMenu} from '../ToAdminLi/AdminMenu';
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import { checkIfAdmin } from '../../store/Slices/LoginSlice';
 import ClothingList from './ClothingList/ClothingList';
+import SearchBar from '../SearchBar/SearchBar';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,6 +53,7 @@ const Navbar = () => {
             settingsMenuAdmin={settingsMenuAdmin}
           />
         )}
+        <SearchBar/>
         <NavProfile
           openSettingsMenuProfile={openSettingsMenuProfile}
           settingsMenuProfile={settingsMenuProfile}

@@ -6,6 +6,8 @@
   background-color: #733ab8;
   position: relative;
   height: 11.5vh; 
+  gap: 20px;
+
 }
 
 .logo {

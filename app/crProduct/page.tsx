@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./crProduct.module.css";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import MenuForCreateItem from "./MenuForCreateItem/MenuForCreateItem";
@@ -12,16 +12,20 @@ import { useRouter } from "next/navigation";
 export default function CrProduct() {
   const [menuForCreateItem, setMenuForCreateItem] = React.useState(false);
   const [errorMessage, setErrorMessage] = React.useState<string>("");
+  const [token, setToken] = useState<string | null>(null);
 
   const dispatch = useAppDispatch();
   const productData = useAppSelector((state) => state.ProductSlice.product);
-  const token = localStorage.getItem("token");
-
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setToken(localStorage.getItem("token"));
+    }
+  }, []);
   const router = useRouter();
 
   useEffect(() => {
     if (!token) {
-      router.push('/'); 
+      router.refresh(); 
       return;
     }
 
@@ -30,12 +34,13 @@ export default function CrProduct() {
       const isAdmin = decodedToken?.role === 'admin';
 
       if (!isAdmin) {
-        router.push('/'); 
+        router.refresh(); 
       }
     } catch (error) {
-      router.push('/'); 
+      router.refresh(); 
     }
   }, [router]);
+  
   const handleSubmit = async () => {
     if (!productData) {
       setErrorMessage("Данные продукта отсутствуют.");
