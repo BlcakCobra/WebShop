@@ -32,6 +32,24 @@ export default function SearchResults() {
     }
   }, []);
 
+const productsToRender = () => {
+  if (filterdResault?.products?.length) {
+    return filterdResault.products;
+  }
+  if (someSearchResults?.products?.length) {
+    return someSearchResults.products;
+  }
+  return [];
+}
+const productsToPagination = () => {
+  if (filterdResault?.products?.length) {
+    return filterdResault.totalPages;
+  }
+  if (someSearchResults?.products?.length) {
+    return someSearchResults.totalPages;
+  }
+  return 1;
+}
   return (
     <div>
       <h1>Результаты поиска для: {query}</h1>
@@ -39,12 +57,12 @@ export default function SearchResults() {
       <div className={styles.Main}>
         <div className={styles.colum}>
           <div className={styles.row}>
-            <MapForProducts productsList={someSearchResults?.products}/>
+            <MapForProducts productsList={productsToRender()}/>
           </div>
         </div>
       </div>
       <Pagination
-    pageCount={someSearchResults?.totalPages ?? 1}
+    pageCount={productsToPagination() ?? 1}
     onPageChange={handlePageChange}
 />
 

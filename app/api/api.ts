@@ -248,7 +248,6 @@ export const RequestesToServer = {
         try {
           const queryString = new URLSearchParams();
       
-          if (params.searchQuery) queryString.append("searchQuery", params.searchQuery);
           if (params.sort) queryString.append("sort", params.sort);
           if (params.priceFrom !== undefined) queryString.append("priceFrom", params.priceFrom.toString());
           if (params.priceTo !== undefined) queryString.append("priceTo", params.priceTo.toString());

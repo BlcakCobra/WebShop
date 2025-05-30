@@ -2,6 +2,7 @@ import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RequestesToServer } from "../../api/api";
 import { ClothingType, ProductType, SexType } from "../../types/ProductSliceType";
 import {SearchFilterParams,SortOption} from "./../../types/SearchFilterType"
+import { SearchAnythingSliceType } from "../../types/SearchSliceType";
  
 
 export const AsyncSearchResultFilterSlice = createAsyncThunk(
@@ -17,7 +18,7 @@ export const AsyncSearchResultFilterSlice = createAsyncThunk(
 );
 
 type initialStateType = {
-  filterdResault: ProductType[]; 
+  filterdResault: SearchAnythingSliceType | null ; 
   error: string;
   loading: boolean;
   priceTo:number
@@ -27,10 +28,13 @@ type initialStateType = {
   sort: "newest" | "rating_desc" | "price_desc" | "price_asc" | "oldest" | "";
   discount:boolean
   rating:number
+  page: number;
+  totalPages: number;
+  totalItems: number;
 };
 
 const initialState: initialStateType = {
-  filterdResault: [],
+  filterdResault:null,
   error: "",
   loading: false,
   priceTo:0,
@@ -39,7 +43,11 @@ const initialState: initialStateType = {
   type:"",
   sort:"",
   discount:false,
-  rating:0
+  rating:0,
+  page:0,
+  totalItems:0,
+  totalPages:0
+  
 };
 
  const FilterSearchedProductSlice = createSlice({
@@ -76,7 +84,7 @@ const initialState: initialStateType = {
       state.rating = 0;
       state.discount = false;
     },
-    setFilteredResult: (state, action: PayloadAction<ProductType[]>) => {
+    setFilteredResult: (state, action: PayloadAction<SearchAnythingSliceType>) => {
       state.filterdResault = action.payload;
     },
   },extraReducers: (builder) => {
@@ -88,6 +96,9 @@ const initialState: initialStateType = {
       .addCase(AsyncSearchResultFilterSlice.fulfilled, (state, action) => {
         state.loading = false;
         state.filterdResault = action.payload;
+        state.page = action.payload.page;
+        state.totalPages = action.payload.totalPages;
+        state.totalItems = action.payload.totalItems;
       })
       .addCase(AsyncSearchResultFilterSlice.rejected, (state, action) => {
         state.loading = false;

@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+
+import React, { useEffect } from "react";
 import style from "./filterSearchedProduct.module.css";
 import { useAppDispatch, useAppSelector } from "../../store/store";
 import {
@@ -14,8 +15,10 @@ import {
   AsyncSearchResultFilterSlice,
 } from "../../store/Slices/SearchResaultFilterSlice";
 import { ClothingType, SexType } from "../../types/ProductSliceType";
-import {SearchFilterParams,SortOption} from "./../../types/SearchFilterType"
-
+import {
+  SearchFilterParams,
+  SortOption,
+} from "./../../types/SearchFilterType";
 
 export default function FilterSearchedProduct() {
   const {
@@ -28,97 +31,117 @@ export default function FilterSearchedProduct() {
     rating,
     discount,
   } = useAppSelector((state) => state.FilterSearchedProductSlice);
+
   const dispatch = useAppDispatch();
 
-  const clothingTypes = [
-    "t-shirts", "blouses", "shirts", "hoodies", "sweatshirts", "tank tops", 
-    "jeans", "shorts", "trousers", "pants", "skirts", "leggings", 
-    "casual dresses", "cocktail dresses", "maxi dresses", "mini dresses", 
-    "formal gowns", "coats", "jackets", "blazers", "parkas", "vests", 
-    "bras", "panties", "boxers", "briefs", "lingerie", "sneakers", 
-    "boots", "sandals", "heels", "flats", "hats", "scarves", "belts", 
-    "gloves", "bags", "sports bras", "yoga pants", "tracksuits", 
-    "athletic shorts", "pajamas", "nightgowns", "robes", "bikinis", 
-    "swimsuits", "swim trunks"
+  const clothingTypes: ClothingType[] = [
+    "t-shirts", "blouses", "shirts", "hoodies", "sweatshirts", "tank tops",
+    "jeans", "shorts", "trousers", "pants", "skirts", "leggings",
+    "casual dresses", "cocktail dresses", "maxi dresses", "mini dresses",
+    "formal gowns", "coats", "jackets", "blazers", "parkas", "vests",
+    "bras", "panties", "boxers", "briefs", "lingerie", "sneakers",
+    "boots", "sandals", "heels", "flats", "hats", "scarves", "belts",
+    "gloves", "bags", "sports bras", "yoga pants", "tracksuits",
+    "athletic shorts", "pajamas", "nightgowns", "robes", "bikinis",
+    "swimsuits", "swim trunks",
   ];
-
-  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
     const delayDebounce = setTimeout(() => {
-        if(searchQuery || sort || priceFrom || priceTo || sex || discount || type || rating)
+      const shouldRequest =
+        sort !== "" ||
+        priceFrom > 0 ||
+        priceTo > 0 ||
+        sex !== "" ||
+        discount === true ||
+        type !== "" ||
+        rating > 0;
 
-dispatch(
-  AsyncSearchResultFilterSlice({
-    searchQuery,
-    sort,
-    priceFrom,
-    priceTo,
-    sex,
-    discount: discount !== undefined ? String(discount) as "true" | "false" : undefined,
-    type,
-    rating,
-  } as SearchFilterParams)
-);
-    }, 300); 
-    return () => clearTimeout(delayDebounce); 
-  }, [priceFrom, priceTo, sex, sort, discount, type, rating, searchQuery]);
+      if (shouldRequest) {
+        dispatch(
+          AsyncSearchResultFilterSlice({
+            sort,
+            priceFrom,
+            priceTo,
+            sex,
+            discount:
+              discount !== undefined
+                ? String(discount) as "true" | "false"
+                : undefined,
+            type,
+            rating,
+          } as SearchFilterParams)
+        );
+      }
+    }, 300);
 
-  const handleSortChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    dispatch(setSortValue(e.target.value as SortOption));
+    return () => clearTimeout(delayDebounce);
+  }, [priceFrom, priceTo, sex, sort, discount, type, rating]);
+
+  const handleSortChange = (value: SortOption) => {
+    dispatch(setSortValue(value));
   };
 
-  const handlePriceFromKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  const handlePriceChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    type: "from" | "to"
+  ) => {
+    const value = e.target.value;
+    const number = value === "" ? 0 : Math.max(0, Number(value));
+    if (type === "from") dispatch(setPriceFrom(number));
+    else dispatch(setPriceTo(number));
+  };
+
+  const handlePriceKeyDown = (
+    e: React.KeyboardEvent<HTMLInputElement>,
+    type: "from" | "to"
+  ) => {
     if (e.key === "Enter") {
-      dispatch(setPriceFrom(Number((e.target as HTMLInputElement).value)));
+      const input = e.target as HTMLInputElement;
+      const number = input.value === "" ? 0 : Math.max(0, Number(input.value));
+      if (type === "from") dispatch(setPriceFrom(number));
+      else dispatch(setPriceTo(number));
     }
   };
-
-  const handlePriceToKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if (e.key === "Enter") {
-      dispatch(setPriceTo(Number((e.target as HTMLInputElement).value)));
-    }
-  };
-  console.log(filterdResault);
   
-  return (
+  return (    
     <form>
       <div className={style.SearchFilterMenu}>
         <div className={style.priceFT}>
           <input
             type="number"
             value={priceFrom}
-            onChange={(e) => dispatch(setPriceFrom(Number(e.target.value)))}
-            onKeyDown={handlePriceFromKeyDown}
+            min={0}
+            onChange={(e) => handlePriceChange(e, "from")}
+            onKeyDown={(e) => handlePriceKeyDown(e, "from")}
             placeholder="Price From $"
           />
           <input
             type="number"
             value={priceTo}
-            onChange={(e) => dispatch(setPriceTo(Number(e.target.value)))}
-            onKeyDown={handlePriceToKeyDown}
+            min={0}
+            onChange={(e) => handlePriceChange(e, "to")}
+            onKeyDown={(e) => handlePriceKeyDown(e, "to")}
             placeholder="Price To $"
           />
         </div>
 
         <div className={style.sortByX}>
-          <button type="button" onClick={() => dispatch(setSortValue("newest"))}>
-            Newest
-          </button>
-          <button type="button" onClick={() => dispatch(setSortValue("oldest"))}>
-            Oldest
-          </button>
-          <button type="button" onClick={() => dispatch(setSortValue("rating_desc"))}>
-            Rating Desc
-          </button>
-          <button type="button" onClick={() => dispatch(setSortValue("price_desc"))}>
-            Price Desc
-          </button>
-          <button type="button" onClick={() => dispatch(setSortValue("price_asc"))}>
-            Price Asc
-          </button>
+          {["newest", "oldest", "rating_desc", "price_desc", "price_asc"].map(
+            (option) => (
+              <button
+                key={option}
+                type="button"
+                onClick={() => handleSortChange(option as SortOption)}
+                className={
+                  sort === option ? style.activeSortButton : undefined
+                }
+              >
+                {option.replace("_", " ").toUpperCase()}
+              </button>
+            )
+          )}
         </div>
-
         <select
           value={sex}
           onChange={(e) => dispatch(setSex(e.target.value as SexType))}

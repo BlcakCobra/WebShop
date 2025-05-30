@@ -10,7 +10,6 @@ interface FilterQuery {
 export const filterSearchedProducts = async (req: Request, res: Response) => {
   try {
     const {
-      searchQuery,
       page = "1",
       limit = "10",
       sort,
@@ -27,19 +26,19 @@ export const filterSearchedProducts = async (req: Request, res: Response) => {
 
     const filters: FilterQuery = {};
 
-    if (searchQuery && typeof searchQuery === "string" && searchQuery.trim() !== "") {
-      filters.name = { $regex: searchQuery.trim(), $options: "i" };
-    }
+if (
+  (typeof priceFrom === "string" && !isNaN(+priceFrom) && +priceFrom > 0) ||
+  (typeof priceTo === "string" && !isNaN(+priceTo) && +priceTo > 0)
+) {
+  filters.price = {};
+  if (typeof priceFrom === "string" && !isNaN(+priceFrom) && +priceFrom > 0) {
+    filters.price.$gte = +priceFrom;
+  }
+  if (typeof priceTo === "string" && !isNaN(+priceTo) && +priceTo > 0) {
+    filters.price.$lte = +priceTo;
+  }
+}
 
-    if (priceFrom || priceTo) {
-      filters.price = {};
-      if (priceFrom && !isNaN(+priceFrom)) {
-        filters.price.$gte = +priceFrom;
-      }
-      if (priceTo && !isNaN(+priceTo)) {
-        filters.price.$lte = +priceTo;
-      }
-    }
 
     if (type && typeof type === "string" && type.trim() !== "") {
       filters.type = new RegExp(`^${type.trim()}$`, "i");
@@ -53,7 +52,7 @@ export const filterSearchedProducts = async (req: Request, res: Response) => {
       filters.rating = +rating;
     }
 
-    if (discount === "true" ) {
+    if (discount === "true") {
       filters.discount = { $gt: 0 };
     }
 
