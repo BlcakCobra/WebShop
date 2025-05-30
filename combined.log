@@ -531,3 +531,93 @@
 {"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:08:40.507Z"}
 {"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:08:40.509Z"}
 {"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-29T12:08:40.513Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-29T12:10:44.069Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:10:54.535Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:10:54.546Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:10:54.571Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:11:14.702Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:11:14.707Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:11:14.714Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:15:57.634Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:15:57.637Z"}
+{"level":"info","message":"Product \"fortniteeee xp\" created successfully","timestamp":"2025-04-29T12:15:57.646Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:16:22.480Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:16:22.483Z"}
+{"level":"warn","message":"Validation error: \"price\" must be a number","timestamp":"2025-04-29T12:16:22.485Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:16:40.598Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:16:40.600Z"}
+{"level":"info","message":"Product \"fortnitef sfg\" created successfully","timestamp":"2025-04-29T12:16:40.616Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:17:06.022Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:17:06.025Z"}
+{"level":"info","message":"Product \"fortnite sfg\" created successfully","timestamp":"2025-04-29T12:17:06.029Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:17:27.292Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:17:27.297Z"}
+{"level":"info","message":"Product \"3555\" created successfully","timestamp":"2025-04-29T12:17:27.304Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:17:45.633Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:17:45.636Z"}
+{"level":"info","message":"Product \"fortnitewqtq\" created successfully","timestamp":"2025-04-29T12:17:45.642Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:18:07.019Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:18:07.021Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:18:07.026Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:18:41.730Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:18:41.734Z"}
+{"level":"info","message":"Product \"fortniteaaddd\" created successfully","timestamp":"2025-04-29T12:18:41.744Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:20:24.272Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:20:24.274Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:20:24.281Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:20:41.640Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:20:41.642Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:20:41.646Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:21:01.673Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:21:01.675Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:21:01.680Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:21:22.876Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:21:22.878Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:21:22.883Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:23:27.584Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:23:27.587Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:23:27.592Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:23:40.833Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:23:40.835Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:23:40.840Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:24:02.385Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:24:02.387Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:24:02.391Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:24:18.424Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:24:18.427Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:24:18.430Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:25:06.109Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:25:06.111Z"}
+{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:25:06.119Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T11:38:17.810Z"}
+{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-05-08T11:39:48.265Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1746704388,\"exp\":1747395588}","timestamp":"2025-05-08T11:40:44.771Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-05-08T11:40:44.800Z"}
+{"level":"info","message":"Product \"fort\" created successfully","timestamp":"2025-05-08T11:40:44.856Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T12:20:54.804Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T12:50:11.512Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T12:50:26.855Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T13:01:35.847Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T13:07:36.007Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-10T09:41:10.077Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-10T12:47:00.564Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T12:07:34.951Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:24:31.419Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:24:48.482Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:25:09.292Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:25:26.468Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:26:02.476Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:26:40.228Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:31:46.933Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:32:19.005Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:37:25.795Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:37:33.072Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:52:01.851Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T14:06:17.905Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T14:11:39.734Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T14:12:48.731Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-26T12:30:37.431Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-26T13:35:02.289Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-26T13:35:25.834Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-26T14:31:35.493Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-30T11:14:24.889Z"}

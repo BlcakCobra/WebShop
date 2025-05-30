@@ -6,6 +6,7 @@ import { AsyncSearchAnythingSlice, setChooseWhichArr, setCurrentPage } from '../
 import { useEffect, useState } from 'react';
 import FilterSearchedProduct from '../Components/FilterSearchedProduct/FilterSearchedProduct';
 import Pagination from '../Components/Pagination/Pagination';
+import MapForProducts from '../Components/MapForProducts/MapForProducts';
 
 
 export default function SearchResults() {
@@ -13,17 +14,18 @@ export default function SearchResults() {
   const query = searchParams.get('query') || '';
   const router = useRouter();
   const dispatch = useAppDispatch();
-  const { someSearchResults } = useAppSelector(state => state.SearchAnythingSlice);
-
+  const { someSearchResults,currentPage } = useAppSelector(state => state.SearchAnythingSlice);
+  const {filterdResault} = useAppSelector(state => state.FilterSearchedProductSlice)
   const [hasSearched, setHasSearched] = useState(false);
 
   const handlePageChange = (page: number) => {
     dispatch(setCurrentPage(page));
-    dispatch(AsyncSearchAnythingSlice({ searchQuery: query, page : 1}));
+    dispatch(AsyncSearchAnythingSlice({ searchQuery: query, page }));
   };
+  
+  
   useEffect(() => {
     if (query && query.trim().length > 2 && !hasSearched) {
-      console.log("Делаем запрос при загрузке страницы", query);
       dispatch(setChooseWhichArr("all"));
       dispatch(AsyncSearchAnythingSlice({ searchQuery: query, page : 1 }));
       setHasSearched(true);
@@ -37,24 +39,7 @@ export default function SearchResults() {
       <div className={styles.Main}>
         <div className={styles.colum}>
           <div className={styles.row}>
-            {someSearchResults?.products?.length ? (
-              someSearchResults.products.map((el) => (
-                <div key={el._id} className={styles.ProductBox} onClick={() => router.push(`/productPage/${el._id}`)}>
-                  <img className={styles.ProductImage} src={el.image} alt="Product" />
-                  <div className={styles.ProductInfo}>
-                    <div className={styles.ProductPrice}>${el.price}</div>
-                    <div>{el.name}</div>
-                    <div className={styles.ProductRating}>Rating: {el.rating} ⭐</div>
-                    <div className={styles.ProductDetails}>For: {el.sex}</div>
-                    <div className={styles.ProductDetails}>Size: {el.size}</div>
-                    <div className={styles.ProductColor} style={{ backgroundColor: el.color }}></div>
-                    <div className={styles.ProductDetails}>Type: {el.type}</div>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <p>Нет результатов</p>
-            )}
+            <MapForProducts productsList={someSearchResults?.products}/>
           </div>
         </div>
       </div>

@@ -1,11 +1,18 @@
 import { Request, Response } from "express";
 import logger from "../../log/logger";
 import Product from "../../models/products";
+import { ServerSearchFilterParams } from "../../types/SearchQuerysType";
+
+interface FilterQuery {
+  [key: string]: any;
+}
 
 export const filterSearchedProducts = async (req: Request, res: Response) => {
   try {
-    const { searchQuery } = req.query;
     const {
+      searchQuery,
+      page = "1",
+      limit = "10",
       sort,
       priceFrom,
       priceTo,
@@ -13,53 +20,78 @@ export const filterSearchedProducts = async (req: Request, res: Response) => {
       sex,
       discount,
       rating,
-    } = req.query;
+    }: ServerSearchFilterParams = req.query;
 
-    const filters: any = {};
+    const pageNum = Math.max(parseInt(page as string, 10), 1);
+    const limitNum = Math.min(Math.max(parseInt(limit as string, 10), 1), 50);
 
-    if (searchQuery && typeof searchQuery === 'string') {
-      filters.name = { $regex: searchQuery, $options: "i" };
+    const filters: FilterQuery = {};
+
+    if (searchQuery && typeof searchQuery === "string" && searchQuery.trim() !== "") {
+      filters.name = { $regex: searchQuery.trim(), $options: "i" };
     }
 
     if (priceFrom || priceTo) {
       filters.price = {};
-      if (priceFrom) filters.price.$gte = Number(priceFrom);
-      if (priceTo) filters.price.$lte = Number(priceTo);
+      if (priceFrom && !isNaN(+priceFrom)) {
+        filters.price.$gte = +priceFrom;
+      }
+      if (priceTo && !isNaN(+priceTo)) {
+        filters.price.$lte = +priceTo;
+      }
     }
 
-    if (type) {
-      filters.type = type;
+    if (type && typeof type === "string" && type.trim() !== "") {
+      filters.type = new RegExp(`^${type.trim()}$`, "i");
     }
 
-    if (sex) {
-      filters.sex = sex;
+    if (sex && typeof sex === "string" && sex.trim() !== "") {
+      filters.sex = new RegExp(`^${sex.trim()}$`, "i");
     }
 
-    if (rating) {
-      filters.rating = Number(rating);
+    if (rating && !isNaN(+rating)) {
+      filters.rating = +rating;
     }
 
-    if (discount === 'true') {
+    if (discount === "true" ) {
       filters.discount = { $gt: 0 };
     }
 
-    let sortOption: any = {};
-
-    if (sort === "newest") {
-      sortOption.createdAt = -1;
-    } else if (sort === "oldest") {
-      sortOption.createdAt = 1;
-    } else if (sort === "price_asc") {
-      sortOption.price = 1;
-    } else if (sort === "price_desc") {
-      sortOption.price = -1;
-    } else if (sort === "rating_desc") {
-      sortOption.rating = -1;
+    const sortOption: FilterQuery = {};
+    switch (sort) {
+      case "newest":
+        sortOption.createdAt = -1;
+        break;
+      case "oldest":
+        sortOption.createdAt = 1;
+        break;
+      case "price_asc":
+        sortOption.price = 1;
+        break;
+      case "price_desc":
+        sortOption.price = -1;
+        break;
+      case "rating_desc":
+        sortOption.rating = -1;
+        break;
     }
 
-    const products = await Product.find(filters).sort(sortOption);
+    console.log("Filters:", filters);
+    console.log("Sort option:", sortOption);
 
-    res.json(products);
+    const total = await Product.countDocuments(filters);
+
+    const products = await Product.find(filters)
+      .sort(sortOption)
+      .skip((pageNum - 1) * limitNum)
+      .limit(limitNum);
+
+    res.status(200).json({
+      products,
+      page: pageNum,
+      totalPages: Math.ceil(total / limitNum),
+      totalItems: total,
+    });
   } catch (error) {
     logger.error("Error filtering products", error);
     res.status(500).json({ message: "Server error" });

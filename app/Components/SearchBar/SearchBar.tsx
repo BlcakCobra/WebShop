@@ -37,15 +37,25 @@ export default function SearchBar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  useEffect(() => {
-    if (pathname === '/search' && queryParam.trim().length > 2) {
-      dispatch(setSearchQuery(queryParam));
-      dispatch(setChooseWhichArr("all"));
-      dispatch(AsyncSearchAnythingSlice({ searchQuery: queryParam, page: 1 }));
+useEffect(() => {
+  const trimmed = searchQuery.trim();
 
+  const delayDebounce = setTimeout(() => {
+    if (trimmed.length > 2 && pathname !== "/search") {
+      dispatch(setChooseWhichArr("five"));
+      dispatch(AsyncSearchAnythingSlice({ searchQuery: trimmed, page: 1 }))
+        .then(() => {
+          dispatch(applySearchLimit());
+          setShowDropdown(true);
+        });
+    } else {
       setShowDropdown(false);
     }
-  }, [queryParam, pathname]);
+  }, 400);
+
+  return () => clearTimeout(delayDebounce); 
+}, [searchQuery, pathname]);
+
 
   useEffect(() => {
     const trimmed = searchQuery.trim();
@@ -65,7 +75,6 @@ export default function SearchBar() {
   
     return () => clearTimeout(delayDebounce); 
   }, [searchQuery]);
-  console.log(searchQuery);
   
 
   const handleSubmit = (e: React.FormEvent) => {

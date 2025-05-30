@@ -1,4 +1,5 @@
 import { ChangeEvent, HTMLInputTypeAttribute } from "react";
+import { ProductType } from "./ProductSliceType";
 
 export interface BurgerType {
     isOpen:boolean,
@@ -34,4 +35,12 @@ export interface ImportImageInputType {
   
 export interface UpdateProductType {
     id:string
+}
+
+
+
+
+export interface MapForProductsType {
+    [x: string]: any;
+    productsList:ProductType[] | undefined | null
 }

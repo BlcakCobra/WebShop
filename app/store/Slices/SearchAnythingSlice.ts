@@ -28,7 +28,7 @@ type InitialStateType = {
   loading: boolean;
   searchQuery:string | ""
   chooseWhichArr: "five" | "all" | ""
-  currentPage?: number;
+  currentPage?: number ;
 };
 
 const initialState: InitialStateType = {

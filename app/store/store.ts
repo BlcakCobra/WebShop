@@ -10,7 +10,7 @@ import { TypedUseSelectorHook, useDispatch, useSelector} from "react-redux";
 import  ProductsWithSpecificType from "../store/Slices/ProductsWithSpecificTypeSlice";
 import CreateProductDetailsSlice from "./Slices/CreateProductDetailsSlice"
 import SearchAnythingSlice from "./Slices/SearchAnythingSlice"
-import SearchResaultFilterSlice from "./Slices/SearchResaultFilterSlice"
+import FilterSearchedProductSlice from "./Slices/SearchResaultFilterSlice"
 
 export const store = configureStore({
     reducer:{
@@ -23,7 +23,7 @@ export const store = configureStore({
         GetProductByIdSlice:GetProductByIdSlice,
         CreateProductDetailsSlice:CreateProductDetailsSlice,
         SearchAnythingSlice:SearchAnythingSlice,
-        SearchResaultFilterSlice:SearchResaultFilterSlice
+        FilterSearchedProductSlice:FilterSearchedProductSlice
         }       
 })
 

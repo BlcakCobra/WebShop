@@ -1,7 +1,10 @@
 import axios from "axios";
 import { FilteredProductType, ProductType } from "../types/ProductSliceType";
 import {ProductDetailsType} from "../types/ProductDetails"
-import { response } from "express";
+import { SearchFilterParams } from "../types/SearchFilterType";
+import { searchQueryType } from "../../Server/types/SearchQuerysType";
+
+
 function handleError(error: unknown): never {
   if (axios.isAxiosError(error)) {
     console.error("Axios error:", error.message);
@@ -20,6 +23,7 @@ function handleError(error: unknown): never {
 }
 
 
+
 const BaseUrl = axios.create({
     baseURL: process.env.REACT_APP_API_BASE_URL || 'http://localhost:5001/'
 });
@@ -28,13 +32,27 @@ const BaseUrl = axios.create({
 
   
 export const RequestesToServer = {
-    RegistrationReq(username: string, password: string, confirmPassword: string) {
+      async RegistrationReq( username: string, password: string, confirmPassword: string) {
         try {
-            return BaseUrl.post("/register", { username, password, confirmPassword });
+          if (!password) {
+            throw new Error("Password can't be empty");
+          } else if (!username) {
+            throw new Error("Username can't be empty");
+          } else if (!confirmPassword) {
+            throw new Error("ConfirmPassword can't be empty");
+          }
+    
+          const response = await BaseUrl.post("/registration", {
+            username,
+            password,
+            confirmPassword,
+          });
+    
+          return response.data;
         } catch (error) {
-            throw new Error(`Something went wrong: ${error}`);
+          handleError(error);
         }
-    },
+      },
     LoginReq(username: string, password: string) {
         try {
             return BaseUrl.post("/login", { username, password });
@@ -226,16 +244,7 @@ export const RequestesToServer = {
           handleError(error);
         }
       },
-      async SearchResaultFilter(params: {
-        searchQuery: string;
-        sort?: string;
-        priceFrom?: number;
-        priceTo?: number;
-        type?: string;
-        sex?: string;
-        discount?: boolean;
-        rating?: number;
-      }) {
+      async SearchResultFilter(params: SearchFilterParams) {
         try {
           const queryString = new URLSearchParams();
       
@@ -248,7 +257,8 @@ export const RequestesToServer = {
           if (params.discount !== undefined) queryString.append("discount", String(params.discount));
           if (params.rating !== undefined) queryString.append("rating", params.rating.toString());
       
-          const response = await BaseUrl.get(`/searchResaultFilter?${queryString.toString()}`);
+              const response = await BaseUrl.get(`/searchResaultFilter?${queryString.toString()}`);
+
       
           if (response.status !== 200) {
             throw new Error("Something went wrong with Search Product");

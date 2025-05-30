@@ -15,10 +15,12 @@ export type ClothingType =
 
 export type ClothingSize = "S" | "M" | "L" | "XL" | "XXL" | "";
 
+export type SexType = "Man" | "Woman" | "Other" | ""
+
 export interface ProductType {
   [x: string]: any;
   name:string
-  sex: "Man" | "Woman" | "Other" | "";
+  sex:SexType ;
   type: ClothingType;
   image: string;
   color: string;

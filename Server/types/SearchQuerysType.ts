@@ -1,4 +1,5 @@
-import { ClothingType } from "../../app/types/ProductSliceType";
+import { ClothingType, SexType } from "../../app/types/ProductSliceType";
+import { SearchFilterParams, SortOption } from "../../app/types/SearchFilterType";
 
 export interface searchQueryType{
     searchQuery?:string,
@@ -8,3 +9,13 @@ export interface searchQueryType{
     page?:string,
     limit?:string
 }
+
+
+export type ServerSearchFilterParams = Omit<SearchFilterParams, "discount" | "priceFrom" | "priceTo" | "rating"> & {
+  discount?: string;
+  priceFrom?: string;
+  priceTo?: string;
+  rating?: string;
+  page?:string
+  limit?:string
+};

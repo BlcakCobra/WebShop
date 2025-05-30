@@ -1,0 +1,66 @@
+.SearchFilterMenu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    background-color: #ffffff;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    white-space: nowrap;
+    font-family: "Inter", sans-serif;
+    color: #333;
+  }
+  
+  .priceFT {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .priceFT input {
+    width: 120px;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .sortByX {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .sortByX button {
+    padding: 0.5rem 0.9rem;
+    background-color: #733ab8;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+  }
+  
+  .sortByX button:hover {
+    background-color: #5a2c92;
+  }
+  
+  .formInput {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    background-color: #f9f9f9;
+    min-width: 150px;
+  }
+  
+  .formCheckbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+  
