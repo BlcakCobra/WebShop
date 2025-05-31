@@ -38,13 +38,15 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={styles.navbar}>
+    <div className={styles.navbar}>
       <Link href="/">
         <img src={images.logo.src} className={styles.logo} alt="Logo" />
       </Link>
-      <div className={styles.ElementNavbarBox}>
-        <ClothingList/>
+      <nav className={styles.nav_item}>
+        <div className={styles.ElementNavbarBox}>
+          <ClothingList/>
       </div>
+      </nav>
       <div className={`${styles.menu} ${isOpen ? styles.active : ''}`}>
         {isAdmin && (
           <AdminMenu
@@ -60,7 +62,7 @@ const Navbar = () => {
         />
       </div>
       <Burger isOpen={isOpen} toggleMenu={toggleMenu} />
-    </nav>
+    </div>
   );
 };
 

@@ -41,8 +41,9 @@ export const RequestesToServer = {
           } else if (!confirmPassword) {
             throw new Error("ConfirmPassword can't be empty");
           }
+          console.log(username,password,confirmPassword);
     
-          const response = await BaseUrl.post("/registration", {
+          const response = await BaseUrl.post("/register", {
             username,
             password,
             confirmPassword,
