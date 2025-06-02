@@ -1,6 +1,6 @@
 "use client";
 import Link from 'next/link';
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import styles from './Navbar.module.css';
 import { images } from "../../Images/images";
 import NavProfile from '../Profile/Profile';
@@ -10,6 +10,7 @@ import { useAppDispatch, useAppSelector } from '../../store/store';
 import { checkIfAdmin } from '../../store/Slices/LoginSlice';
 import ClothingList from './ClothingList/ClothingList';
 import SearchBar from '../SearchBar/SearchBar';
+import { useClickOutside } from '../../OwnHooks/useClickOutside';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,6 +37,8 @@ const Navbar = () => {
   useEffect(() => {
     dispatch(checkIfAdmin());
   }, []);
+
+
 
   return (
     <div className={styles.navbar}>

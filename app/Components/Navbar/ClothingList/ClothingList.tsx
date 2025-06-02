@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./ClothingList.module.css";
 import Link from "next/link";
+import { useClickOutside } from "../../../OwnHooks/useClickOutside";
 
 type ProductCategories = {
   [key: string]: string[];
@@ -23,13 +24,19 @@ export default function ClothingList() {
   };
 
   const [showCategories, setShowCategories] = useState(false);
+  const wrapperRef = useRef<HTMLDivElement>(null);
 
-  
+  useClickOutside(wrapperRef, () => setShowCategories(false));
+
   return (
-    <div className={styles.menuContainer}>
-      <button className={styles.mainButton} onClick={() => setShowCategories((prev) => !prev)}>
-      Categories
+    <div className={styles.menuContainer} ref={wrapperRef}>
+      <button
+        className={styles.mainButton}
+        onClick={() => setShowCategories((prev) => !prev)}
+      >
+        Categories
       </button>
+
       {showCategories && (
         <div className={styles.categoriesList}>
           {Object.keys(productCategories).map((category) => (
@@ -43,7 +50,11 @@ export default function ClothingList() {
               </div>
               <div className={styles.productList}>
                 {productCategories[category].map((item, index) => (
-                  <Link key={index} href={`/productType/${item}`} className={styles.productItem}>
+                  <Link
+                    key={index}
+                    href={`/productType/${item}`}
+                    className={styles.productItem}
+                  >
                     {item}
                   </Link>
                 ))}

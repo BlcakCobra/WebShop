@@ -36,7 +36,7 @@
     ".next/types/**/*.ts",
     "test/**/*",
     "Server/**/*.d.ts"
-, "app/Components/ProductFullInfo"  ],
+, "app/Components/ProductFullInfo", "app/OwnHooks/useClickOutside.ts"  ],
   "exclude": [
     "node_modules"
   ]

@@ -10,6 +10,7 @@ import {
   setSearchQuery
 } from '../../store/Slices/SearchAnythingSlice';
 import { useAppDispatch, useAppSelector } from '../../store/store';
+import { useClickOutside } from '../../OwnHooks/useClickOutside';
 
 export default function SearchBar() {
   const dispatch = useAppDispatch();
@@ -26,16 +27,9 @@ export default function SearchBar() {
   console.log(someSearchResults);
   
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (wrapperRef.current && !wrapperRef.current.contains(event.target as Node)) {
-        setShowDropdown(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  useClickOutside(wrapperRef, () => {
+    setShowDropdown(false);
+  });
 
 useEffect(() => {
   const trimmed = searchQuery.trim();

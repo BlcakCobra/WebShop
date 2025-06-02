@@ -1,7 +1,6 @@
 import Joi from "joi";
 
 export const productDetailsValidationSchema = Joi.object({
-    productId: Joi.string().pattern(/^[0-9a-fA-F]{24}$/).required(), 
     description: Joi.string().required().min(15).max(200).pattern(/^[a-zA-Z0-9 _-]+$/),
     images: Joi.array().items(Joi.string().uri()).required().min(1).max(5), 
     reviews: Joi.array().items(
