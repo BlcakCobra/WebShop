@@ -17,6 +17,7 @@ import {
 import { ClothingType, SexType } from "../../types/ProductSliceType";
 import {
   SearchFilterParams,
+  SearchFilterParamsForRequest,
   SortOption,
 } from "./../../types/SearchFilterType";
 
@@ -30,10 +31,11 @@ export default function FilterSearchedProduct() {
     type,
     rating,
     discount,
+    filteredPage
   } = useAppSelector((state) => state.FilterSearchedProductSlice);
 
   const dispatch = useAppDispatch();
-
+  let page = filteredPage
   const clothingTypes: ClothingType[] = [
     "t-shirts", "blouses", "shirts", "hoodies", "sweatshirts", "tank tops",
     "jeans", "shorts", "trousers", "pants", "skirts", "leggings",
@@ -59,19 +61,19 @@ export default function FilterSearchedProduct() {
 
       if (shouldRequest) {
         dispatch(
-          AsyncSearchResultFilterSlice({
-            sort,
-            priceFrom,
-            priceTo,
-            sex,
-            discount:
-              discount !== undefined
-                ? String(discount) as "true" | "false"
-                : undefined,
-            type,
-            rating,
-          } as SearchFilterParams)
-        );
+  AsyncSearchResultFilterSlice({
+    params: {
+      sort,
+      priceFrom,
+      priceTo,
+      sex,
+      discount: discount !== undefined ? String(discount) as "true" | "false" : undefined,
+      type,
+      rating,
+    },
+    page
+  } as SearchFilterParamsForRequest)
+);
       }
     }, 300);
 

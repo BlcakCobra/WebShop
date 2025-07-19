@@ -1,667 +1,307 @@
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-29T12:26:25.784Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-29T12:26:25.796Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-29T12:26:25.800Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-29T12:26:25.814Z"}
-{"level":"info","message":"Product \"miimim\" created successfully","timestamp":"2025-03-29T12:26:25.843Z"}
-{"level":"error","message":"Server error during product creation: E11000 duplicate key error collection: MyShop.products index: name_1 dup key: { name: \"miimim\" }","timestamp":"2025-03-29T12:26:25.845Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-03-29T12:29:12.366Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-29T12:36:47.665Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-29T12:36:47.678Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-29T12:36:47.691Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-29T12:36:47.700Z"}
-{"level":"info","message":"Product \"ollo\" created successfully","timestamp":"2025-03-29T12:36:47.727Z"}
-{"level":"error","message":"Server error during product creation: E11000 duplicate key error collection: MyShop.products index: name_1 dup key: { name: \"ollo\" }","timestamp":"2025-03-29T12:36:47.731Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-03-29T12:42:29.848Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-03-29T12:43:39.884Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-29T12:44:27.350Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-29T12:44:27.357Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-29T12:44:27.400Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-29T12:44:27.403Z"}
-{"level":"info","message":"Product \"dfsfs\" created successfully","timestamp":"2025-03-29T12:44:27.465Z"}
-{"level":"error","message":"Server error during product creation: E11000 duplicate key error collection: MyShop.products index: name_1 dup key: { name: \"dfsfs\" }","timestamp":"2025-03-29T12:44:27.466Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-03-30T08:05:34.528Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:07:43.941Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:07:43.953Z"}
-{"level":"warn","message":"Validation error: \"size\" must be one of [S, M, L, XL, XXL]","timestamp":"2025-03-30T08:07:43.970Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:08:58.362Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:08:58.395Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:08:58.399Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:08:58.414Z"}
-{"level":"info","message":"Product \"efee\" created successfully","timestamp":"2025-03-30T08:08:58.579Z"}
-{"level":"error","message":"Server error during product creation: E11000 duplicate key error collection: MyShop.products index: name_1 dup key: { name: \"efee\" }","timestamp":"2025-03-30T08:08:58.655Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:09:33.866Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:09:33.872Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:09:33.876Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:09:33.879Z"}
-{"level":"info","message":"Product \"xfdfd\" created successfully","timestamp":"2025-03-30T08:09:33.897Z"}
-{"level":"error","message":"Server error during product creation: E11000 duplicate key error collection: MyShop.products index: name_1 dup key: { name: \"xfdfd\" }","timestamp":"2025-03-30T08:09:33.912Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-03-30T08:14:57.443Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:17:24.489Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:17:24.500Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:17:24.503Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:17:24.513Z"}
-{"level":"info","message":"Product \"sfasf\" created successfully","timestamp":"2025-03-30T08:17:24.532Z"}
-{"level":"info","message":"Product \"sfasf\" created successfully","timestamp":"2025-03-30T08:17:24.536Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:17:31.635Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:17:31.638Z"}
-{"level":"info","message":"Product 67e8fe1424e617d1e294cfe6 removal was successful","timestamp":"2025-03-30T08:17:31.660Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:17:47.496Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:17:47.501Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:17:47.504Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:17:47.509Z"}
-{"level":"info","message":"Product \"dsfasf\" created successfully","timestamp":"2025-03-30T08:17:47.531Z"}
-{"level":"info","message":"Product \"dsfasf\" created successfully","timestamp":"2025-03-30T08:17:47.535Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:17:49.854Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:17:49.858Z"}
-{"level":"info","message":"Product 67e8fe2b24e617d1e294cffa removal was successful","timestamp":"2025-03-30T08:17:49.862Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:32:34.626Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:32:34.633Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:32:34.637Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:32:34.642Z"}
-{"level":"info","message":"Product \"sffs\" created successfully","timestamp":"2025-03-30T08:32:34.659Z"}
-{"level":"info","message":"Product \"sffs\" created successfully","timestamp":"2025-03-30T08:32:34.661Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:33:48.157Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:33:48.161Z"}
-{"level":"warn","message":"Validation error: \"size\" must be one of [S, M, L, XL, XXL]","timestamp":"2025-03-30T08:33:48.164Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:34:08.862Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:34:08.867Z"}
-{"level":"info","message":"Product \"sfasfa\" created successfully","timestamp":"2025-03-30T08:34:08.884Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:34:29.600Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:34:29.608Z"}
-{"level":"info","message":"Product \"safsas\" created successfully","timestamp":"2025-03-30T08:34:29.642Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:35:22.725Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:35:22.732Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:35:22.737Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:35:22.740Z"}
-{"level":"info","message":"Product \"fsfaf\" created successfully","timestamp":"2025-03-30T08:35:22.754Z"}
-{"level":"info","message":"Product \"fsfaf\" created successfully","timestamp":"2025-03-30T08:35:22.756Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-30T08:36:14.447Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-30T08:36:14.458Z"}
-{"level":"info","message":"Product \"pplplpl\" created successfully","timestamp":"2025-03-30T08:36:14.495Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-03-31T11:47:22.635Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:48:17.185Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:48:17.195Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:48:17.204Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:48:17.219Z"}
-{"level":"info","message":"Product \"dAFASF\" created successfully","timestamp":"2025-03-31T11:48:17.274Z"}
-{"level":"info","message":"Product \"dAFASF\" created successfully","timestamp":"2025-03-31T11:48:17.277Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:54:52.737Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:54:52.742Z"}
-{"level":"info","message":"Product \"sfasfsa\" created successfully","timestamp":"2025-03-31T11:54:52.757Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:54:56.900Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:54:56.904Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: sfasfsa","timestamp":"2025-03-31T11:54:56.913Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:02.704Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:02.708Z"}
-{"level":"info","message":"Product 67e7ceeee4c0dce063714c48 removal was successful","timestamp":"2025-03-31T11:55:02.763Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:05.979Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:06.195Z"}
-{"level":"info","message":"Product 67e7d28fe4c0dce063714c5d removal was successful","timestamp":"2025-03-31T11:55:06.425Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:09.660Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:09.670Z"}
-{"level":"info","message":"Product 67e7e6f1c658c70bfc83678e removal was successful","timestamp":"2025-03-31T11:55:09.814Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:12.558Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:12.722Z"}
-{"level":"info","message":"Product 67e7e95fb5bbd0f13fbc06cb removal was successful","timestamp":"2025-03-31T11:55:12.729Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:15.360Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:15.569Z"}
-{"level":"info","message":"Product 67e7eb2bd401d545d14f787e removal was successful","timestamp":"2025-03-31T11:55:15.596Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:17.190Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:17.194Z"}
-{"level":"info","message":"Product 67e8fc1acf9966655d1d01cb removal was successful","timestamp":"2025-03-31T11:55:17.221Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:17.876Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:17.878Z"}
-{"level":"info","message":"Product 67e8fc3dcf9966655d1d01d4 removal was successful","timestamp":"2025-03-31T11:55:17.881Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:18.445Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:18.448Z"}
-{"level":"info","message":"Product 67e8fe1424e617d1e294cfe4 removal was successful","timestamp":"2025-03-31T11:55:18.451Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:18.865Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:18.867Z"}
-{"level":"info","message":"Product 67e8fe2b24e617d1e294cff8 removal was successful","timestamp":"2025-03-31T11:55:18.870Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:19.310Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:19.315Z"}
-{"level":"info","message":"Product 67e901a224e617d1e294d00d removal was successful","timestamp":"2025-03-31T11:55:19.323Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:19.887Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:19.890Z"}
-{"level":"info","message":"Product 67e901a224e617d1e294d00f removal was successful","timestamp":"2025-03-31T11:55:19.894Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:20.273Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:20.275Z"}
-{"level":"info","message":"Product 67e9020024e617d1e294d018 removal was successful","timestamp":"2025-03-31T11:55:20.277Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:20.726Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:20.728Z"}
-{"level":"info","message":"Product 67e9021524e617d1e294d01f removal was successful","timestamp":"2025-03-31T11:55:20.734Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:21.093Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:21.096Z"}
-{"level":"info","message":"Product 67e9024a24e617d1e294d028 removal was successful","timestamp":"2025-03-31T11:55:21.099Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:21.448Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:21.450Z"}
-{"level":"info","message":"Product 67e9024a24e617d1e294d02a removal was successful","timestamp":"2025-03-31T11:55:21.453Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:21.773Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:21.776Z"}
-{"level":"info","message":"Product 67e9027e24e617d1e294d02f removal was successful","timestamp":"2025-03-31T11:55:21.780Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:22.990Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:22.992Z"}
-{"level":"info","message":"Product 67ea8101aae50ee877f87e8f removal was successful","timestamp":"2025-03-31T11:55:22.995Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:25.951Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:25.953Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: sfasfsa","timestamp":"2025-03-31T11:55:25.959Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:55:38.207Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:55:38.209Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: sfasfsa","timestamp":"2025-03-31T11:55:38.213Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:56:22.030Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:56:22.037Z"}
-{"level":"info","message":"Product \"bddhh\" created successfully","timestamp":"2025-03-31T11:56:22.072Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:56:29.677Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:56:29.679Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: bddhh","timestamp":"2025-03-31T11:56:29.683Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:56:30.159Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:56:30.162Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: bddhh","timestamp":"2025-03-31T11:56:30.166Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:56:30.319Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:56:30.321Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: bddhh","timestamp":"2025-03-31T11:56:30.324Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:56:48.797Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:56:48.804Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:56:48.808Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:56:48.812Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: bddhh","timestamp":"2025-03-31T11:56:48.816Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: bddhh","timestamp":"2025-03-31T11:56:48.819Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:57:15.399Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:57:15.404Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:57:15.406Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:57:15.410Z"}
-{"level":"info","message":"Product \"rrqet\" created successfully","timestamp":"2025-03-31T11:57:15.420Z"}
-{"level":"info","message":"Product \"rrqet\" created successfully","timestamp":"2025-03-31T11:57:15.424Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:57:17.817Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:57:17.819Z"}
-{"level":"info","message":"Product 67ea831baae50ee877f87f93 removal was successful","timestamp":"2025-03-31T11:57:17.822Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:57:50.209Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:57:50.212Z"}
-{"level":"info","message":"Product \"asfasf\" created successfully","timestamp":"2025-03-31T11:57:50.219Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:57:51.370Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:57:51.373Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: asfasf","timestamp":"2025-03-31T11:57:51.376Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:57:51.564Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:57:51.566Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: asfasf","timestamp":"2025-03-31T11:57:51.569Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:57:51.736Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:57:51.738Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: asfasf","timestamp":"2025-03-31T11:57:51.740Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T11:57:51.892Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T11:57:51.894Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: asfasf","timestamp":"2025-03-31T11:57:51.898Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:10:35.530Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:10:35.534Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:10:35.536Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:10:35.539Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: asfasf","timestamp":"2025-03-31T12:10:35.542Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: asfasf","timestamp":"2025-03-31T12:10:35.544Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:11:10.785Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:11:10.795Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:11:10.800Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:11:10.807Z"}
-{"level":"info","message":"Product \"dddd\" created successfully","timestamp":"2025-03-31T12:11:10.836Z"}
-{"level":"info","message":"Product \"dddd\" created successfully","timestamp":"2025-03-31T12:11:10.843Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:12:43.824Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:12:43.834Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:12:43.839Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:12:43.847Z"}
-{"level":"info","message":"Product \"afsfas\" created successfully","timestamp":"2025-03-31T12:12:43.868Z"}
-{"level":"info","message":"Product \"afsfas\" created successfully","timestamp":"2025-03-31T12:12:43.872Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:34.358Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:34.361Z"}
-{"level":"info","message":"Product \"uuyh\" created successfully","timestamp":"2025-03-31T12:18:34.372Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:49.559Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:49.562Z"}
-{"level":"info","message":"Product 67ea8101aae50ee877f87e8d removal was successful","timestamp":"2025-03-31T12:18:49.565Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:50.222Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:50.225Z"}
-{"level":"info","message":"Product 67ea828caae50ee877f87e98 removal was successful","timestamp":"2025-03-31T12:18:50.230Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:50.653Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:50.656Z"}
-{"level":"info","message":"Product 67ea82e6aae50ee877f87f80 removal was successful","timestamp":"2025-03-31T12:18:50.659Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:50.963Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:50.965Z"}
-{"level":"info","message":"Product 67ea831baae50ee877f87f91 removal was successful","timestamp":"2025-03-31T12:18:50.968Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:51.280Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:51.282Z"}
-{"level":"info","message":"Product 67ea833eaae50ee877f87f9f removal was successful","timestamp":"2025-03-31T12:18:51.284Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:51.593Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:51.595Z"}
-{"level":"info","message":"Product 67ea865eaae50ee877f87fb4 removal was successful","timestamp":"2025-03-31T12:18:51.599Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:51.852Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:51.854Z"}
-{"level":"info","message":"Product 67ea865eaae50ee877f87fb6 removal was successful","timestamp":"2025-03-31T12:18:51.857Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:52.981Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:52.982Z"}
-{"level":"info","message":"Product 67ea86bbaae50ee877f87fbd removal was successful","timestamp":"2025-03-31T12:18:52.984Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:53.250Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:53.253Z"}
-{"level":"info","message":"Product 67ea86bbaae50ee877f87fbf removal was successful","timestamp":"2025-03-31T12:18:53.255Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:53.799Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:53.801Z"}
-{"level":"info","message":"Product 67ea881aaae50ee877f87fc4 removal was successful","timestamp":"2025-03-31T12:18:53.803Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:55.956Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:55.958Z"}
-{"level":"info","message":"Product \"uuyh\" created successfully","timestamp":"2025-03-31T12:18:55.966Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:57.983Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:57.985Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: uuyh","timestamp":"2025-03-31T12:18:57.988Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:58.763Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:58.765Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: uuyh","timestamp":"2025-03-31T12:18:58.768Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:58.923Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:58.925Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: uuyh","timestamp":"2025-03-31T12:18:58.928Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:59.083Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:59.085Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: uuyh","timestamp":"2025-03-31T12:18:59.088Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:18:59.244Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:18:59.246Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: uuyh","timestamp":"2025-03-31T12:18:59.250Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:19:19.169Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:19:19.172Z"}
-{"level":"info","message":"Product \"gdg\" created successfully","timestamp":"2025-03-31T12:19:19.178Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:24:12.477Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:24:12.481Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:24:12.484Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:24:12.486Z"}
-{"level":"info","message":"Product \"dzdd\" created successfully","timestamp":"2025-03-31T12:24:12.495Z"}
-{"level":"info","message":"Product \"dzdd\" created successfully","timestamp":"2025-03-31T12:24:12.497Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:45:55.521Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:45:55.530Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:45:55.533Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:45:55.536Z"}
-{"level":"info","message":"Product \"fasfas\" created successfully","timestamp":"2025-03-31T12:45:55.547Z"}
-{"level":"info","message":"Product \"fasfas\" created successfully","timestamp":"2025-03-31T12:45:55.551Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:47:45.653Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:47:45.661Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:47:45.664Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:47:45.670Z"}
-{"level":"info","message":"Product \"fsafas\" created successfully","timestamp":"2025-03-31T12:47:45.691Z"}
-{"level":"info","message":"Product \"fsafas\" created successfully","timestamp":"2025-03-31T12:47:45.702Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:52:57.470Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T12:52:57.476Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:52:57.479Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T12:52:57.486Z"}
-{"level":"info","message":"Product \"sfaf\" created successfully","timestamp":"2025-03-31T12:52:57.505Z"}
-{"level":"info","message":"Product \"sfaf\" created successfully","timestamp":"2025-03-31T12:52:57.509Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743078811,\"exp\":1743770011}","timestamp":"2025-03-31T13:05:41.385Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-03-31T13:05:41.387Z"}
-{"level":"info","message":"Product \"fasfsa\" created successfully","timestamp":"2025-03-31T13:05:41.397Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-03-31T13:37:42.596Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-02T13:07:11.170Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-02T13:10:01.846Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-02T13:13:10.416Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-02T13:13:29.367Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-02T13:16:02.898Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-05T06:58:00.569Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-05T14:22:28.463Z"}
-{"level":"error","message":"Token expired for request: /deleteProduct/67ea882faae50ee877f88012","timestamp":"2025-04-05T15:27:25.349Z"}
-{"level":"error","message":"Token expired for request: /deleteProduct/67ea882faae50ee877f88012","timestamp":"2025-04-05T15:27:25.690Z"}
-{"level":"error","message":"Token expired for request: /deleteProduct/67ea882faae50ee877f88012","timestamp":"2025-04-05T15:27:26.148Z"}
-{"level":"error","message":"Token expired for request: /deleteProduct/67ea882faae50ee877f88012","timestamp":"2025-04-05T15:27:26.329Z"}
-{"level":"error","message":"Token expired for request: /deleteProduct/67ea882faae50ee877f88012","timestamp":"2025-04-05T15:27:26.510Z"}
-{"level":"error","message":"Token expired for request: /deleteProduct/67ea882faae50ee877f88012","timestamp":"2025-04-05T15:27:28.308Z"}
-{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-04-05T15:27:58.926Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:26.403Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:26.419Z"}
-{"level":"info","message":"Product 67ea882faae50ee877f88012 removal was successful","timestamp":"2025-04-05T15:28:26.445Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:26.813Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:26.816Z"}
-{"level":"info","message":"Product 67ea8847aae50ee877f88022 removal was successful","timestamp":"2025-04-05T15:28:26.821Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:27.107Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:27.111Z"}
-{"level":"info","message":"Product 67ea896caae50ee877f8802e removal was successful","timestamp":"2025-04-05T15:28:27.115Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:27.396Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:27.398Z"}
-{"level":"info","message":"Product 67ea896caae50ee877f88030 removal was successful","timestamp":"2025-04-05T15:28:27.400Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:27.609Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:27.613Z"}
-{"level":"info","message":"Product 67ea8e83aae50ee877f88037 removal was successful","timestamp":"2025-04-05T15:28:27.617Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:27.762Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:27.766Z"}
-{"level":"info","message":"Product 67ea8e83aae50ee877f88039 removal was successful","timestamp":"2025-04-05T15:28:27.770Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:27.934Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:27.938Z"}
-{"level":"info","message":"Product 67ea8ef1aae50ee877f88042 removal was successful","timestamp":"2025-04-05T15:28:27.943Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:28.118Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:28.123Z"}
-{"level":"info","message":"Product 67ea8ef1aae50ee877f88044 removal was successful","timestamp":"2025-04-05T15:28:28.130Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:29.639Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:29.641Z"}
-{"level":"info","message":"Product 67ea9029aae50ee877f8804f removal was successful","timestamp":"2025-04-05T15:28:29.644Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-05T15:28:49.232Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-05T15:28:49.235Z"}
-{"level":"info","message":"Product \"fortnite \" created successfully","timestamp":"2025-04-05T15:28:49.277Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-05T16:14:45.316Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-05T16:43:15.331Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-07T13:11:55.824Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-07T13:26:32.658Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-08T15:03:29.640Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-08T16:50:02.574Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:40:41.447Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-09T11:44:35.158Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-09T11:44:35.166Z"}
-{"level":"info","message":"Product \"nike fortnite\" created successfully","timestamp":"2025-04-09T11:44:35.205Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-09T11:44:56.140Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-09T11:44:56.142Z"}
-{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-04-09T11:44:56.150Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-09T11:45:19.182Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-09T11:45:19.185Z"}
-{"level":"info","message":"Product \"fort\" created successfully","timestamp":"2025-04-09T11:45:19.194Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-09T11:45:49.409Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-09T11:45:49.412Z"}
-{"level":"info","message":"Product \"nikeeeee fortnit\" created successfully","timestamp":"2025-04-09T11:45:49.419Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-09T11:46:37.623Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-09T11:46:37.625Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-09T11:46:37.631Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:47:12.830Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:48:29.561Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:50:44.363Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:51:00.920Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:51:53.545Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:52:56.831Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:53:32.137Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:53:54.489Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:54:31.572Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:55:11.507Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:55:47.717Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T11:56:53.011Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-09T11:59:25.081Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-09T11:59:25.090Z"}
-{"level":"info","message":"Product \"gg fortnite\" created successfully","timestamp":"2025-04-09T11:59:25.123Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-09T12:00:06.974Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-09T12:00:06.977Z"}
-{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-04-09T12:00:06.979Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-09T12:00:36.337Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-09T12:00:36.340Z"}
-{"level":"info","message":"Product \"ogfsa fortnite\" created successfully","timestamp":"2025-04-09T12:00:36.349Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1743866878,\"exp\":1744558078}","timestamp":"2025-04-09T12:01:11.732Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-09T12:01:11.734Z"}
-{"level":"info","message":"Product \"nfhjd fortnite\" created successfully","timestamp":"2025-04-09T12:01:11.741Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-09T13:36:52.767Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-10T12:05:30.099Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-12T09:52:29.087Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-12T11:47:19.836Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:07:22.505Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:09:14.152Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:10:20.187Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:10:30.159Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:15:49.291Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:35:49.521Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:36:08.860Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:36:51.243Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:37:05.707Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:37:22.569Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:37:37.869Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:39:07.197Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:39:22.295Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:39:33.574Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:39:41.200Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:39:48.863Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:40:10.752Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:53:08.878Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:53:17.520Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:53:25.627Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:53:53.378Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:56:12.959Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:56:21.910Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:56:55.705Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:57:33.409Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:57:41.683Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:57:50.690Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:58:00.569Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:58:09.881Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:58:19.956Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:58:58.077Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:59:02.463Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:59:10.785Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:59:32.316Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:59:36.871Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T12:59:59.749Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:00:16.429Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:00:21.846Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:00:27.868Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:00:40.643Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:00:49.971Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:02:54.367Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:03:35.561Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:03:41.875Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:03:59.625Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:04:18.925Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:04:44.968Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:04:51.311Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:05:01.404Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:05:10.242Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:05:17.260Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:05:25.140Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:05:54.499Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:06:09.689Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:06:24.291Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:09:57.584Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:10:06.135Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:10:18.805Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:12:48.461Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:15:12.997Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:15:42.826Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:15:50.240Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-14T13:16:01.723Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-15T11:57:52.885Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-15T13:06:50.606Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-16T11:58:47.398Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-16T12:38:00.615Z"}
-{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-04-16T12:38:40.525Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:39:18.547Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:39:18.576Z"}
-{"level":"info","message":"Product \"fortniteeeee\" created successfully","timestamp":"2025-04-16T12:39:18.618Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:39:34.005Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:39:34.008Z"}
-{"level":"info","message":"Product \"fortniteee\" created successfully","timestamp":"2025-04-16T12:39:34.015Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:39:55.802Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:39:55.804Z"}
-{"level":"info","message":"Product \"fortnite jss\" created successfully","timestamp":"2025-04-16T12:39:55.811Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:40:17.631Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:40:17.634Z"}
-{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-04-16T12:40:17.635Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:40:36.143Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:40:36.146Z"}
-{"level":"info","message":"Product \"fortnite 87\" created successfully","timestamp":"2025-04-16T12:40:36.156Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:40:54.340Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:40:54.342Z"}
-{"level":"info","message":"Product \"fortnitee\" created successfully","timestamp":"2025-04-16T12:40:54.349Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:41:15.236Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:41:15.240Z"}
-{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-04-16T12:41:15.240Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:41:39.256Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:41:39.258Z"}
-{"level":"info","message":"Product \"fornite\" created successfully","timestamp":"2025-04-16T12:41:39.265Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:41:58.888Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:41:58.889Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-16T12:41:58.892Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:45:38.679Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:45:38.682Z"}
-{"level":"info","message":"Product \"fortniteeee\" created successfully","timestamp":"2025-04-16T12:45:38.689Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:45:56.182Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:45:56.185Z"}
-{"level":"info","message":"Product \"fortnite ff\" created successfully","timestamp":"2025-04-16T12:45:56.190Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:46:13.864Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:46:13.867Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortniteeee","timestamp":"2025-04-16T12:46:13.870Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:46:28.243Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:46:28.246Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-16T12:46:28.249Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:47:01.412Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:47:01.416Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-16T12:47:01.419Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T12:47:44.327Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T12:47:44.330Z"}
-{"level":"info","message":"Product \"fortniteee fsf\" created successfully","timestamp":"2025-04-16T12:47:44.339Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-16T12:54:00.825Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T13:03:35.230Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T13:03:35.236Z"}
-{"level":"warn","message":"Validation error: \"color\" is not allowed to be empty","timestamp":"2025-04-16T13:03:35.243Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T13:03:52.391Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T13:03:52.393Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-16T13:03:52.398Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T13:04:21.830Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T13:04:21.832Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-16T13:04:21.836Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T13:04:35.244Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T13:04:35.246Z"}
-{"level":"info","message":"Product \"sdfafs\" created successfully","timestamp":"2025-04-16T13:04:35.262Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6738dbc7f8bb046d809e959f\",\"role\":\"admin\",\"iat\":1744807120,\"exp\":1745498320}","timestamp":"2025-04-16T13:06:53.623Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-16T13:06:53.626Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-16T13:06:53.629Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-16T13:28:36.966Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-29T12:02:44.946Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-29T12:04:11.240Z"}
-{"level":"warn","message":"Login attempt for non-existent user: sfasfasga","timestamp":"2025-04-29T12:06:06.009Z"}
-{"level":"info","message":"User successfully registered: sfasfasga","timestamp":"2025-04-29T12:06:23.849Z"}
-{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-04-29T12:06:27.772Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:06:47.004Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:06:47.008Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:06:47.021Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:08:08.731Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:08:08.734Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-29T12:08:08.737Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:08:24.945Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:08:24.947Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-29T12:08:24.951Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:08:40.507Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:08:40.509Z"}
-{"level":"warn","message":"Duplicate product name detected before saving: fortnite","timestamp":"2025-04-29T12:08:40.513Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-04-29T12:10:44.069Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:10:54.535Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:10:54.546Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:10:54.571Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:11:14.702Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:11:14.707Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:11:14.714Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:15:57.634Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:15:57.637Z"}
-{"level":"info","message":"Product \"fortniteeee xp\" created successfully","timestamp":"2025-04-29T12:15:57.646Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:16:22.480Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:16:22.483Z"}
-{"level":"warn","message":"Validation error: \"price\" must be a number","timestamp":"2025-04-29T12:16:22.485Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:16:40.598Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:16:40.600Z"}
-{"level":"info","message":"Product \"fortnitef sfg\" created successfully","timestamp":"2025-04-29T12:16:40.616Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:17:06.022Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:17:06.025Z"}
-{"level":"info","message":"Product \"fortnite sfg\" created successfully","timestamp":"2025-04-29T12:17:06.029Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:17:27.292Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:17:27.297Z"}
-{"level":"info","message":"Product \"3555\" created successfully","timestamp":"2025-04-29T12:17:27.304Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:17:45.633Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:17:45.636Z"}
-{"level":"info","message":"Product \"fortnitewqtq\" created successfully","timestamp":"2025-04-29T12:17:45.642Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:18:07.019Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:18:07.021Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:18:07.026Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:18:41.730Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:18:41.734Z"}
-{"level":"info","message":"Product \"fortniteaaddd\" created successfully","timestamp":"2025-04-29T12:18:41.744Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:20:24.272Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:20:24.274Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:20:24.281Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:20:41.640Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:20:41.642Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:20:41.646Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:21:01.673Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:21:01.675Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:21:01.680Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:21:22.876Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:21:22.878Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:21:22.883Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:23:27.584Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:23:27.587Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:23:27.592Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:23:40.833Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:23:40.835Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:23:40.840Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:24:02.385Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:24:02.387Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:24:02.391Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:24:18.424Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:24:18.427Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:24:18.430Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1745928387,\"exp\":1746619587}","timestamp":"2025-04-29T12:25:06.109Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-04-29T12:25:06.111Z"}
-{"level":"info","message":"Product \"fortnite\" created successfully","timestamp":"2025-04-29T12:25:06.119Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T11:38:17.810Z"}
-{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-05-08T11:39:48.265Z"}
-{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1746704388,\"exp\":1747395588}","timestamp":"2025-05-08T11:40:44.771Z"}
-{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-05-08T11:40:44.800Z"}
-{"level":"info","message":"Product \"fort\" created successfully","timestamp":"2025-05-08T11:40:44.856Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T12:20:54.804Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T12:50:11.512Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T12:50:26.855Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T13:01:35.847Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-08T13:07:36.007Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-10T09:41:10.077Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-10T12:47:00.564Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T12:07:34.951Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:24:31.419Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:24:48.482Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:25:09.292Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:25:26.468Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:26:02.476Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:26:40.228Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:31:46.933Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:32:19.005Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:37:25.795Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:37:33.072Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T13:52:01.851Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T14:06:17.905Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T14:11:39.734Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-12T14:12:48.731Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-26T12:30:37.431Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-26T13:35:02.289Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-26T13:35:25.834Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-26T14:31:35.493Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-30T11:14:24.889Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-30T11:50:17.132Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-30T12:07:38.793Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-30T12:10:45.702Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-30T12:34:58.482Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-30T12:38:50.911Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:36:34.428Z"}
-{"level":"warn","message":"Login attempt for non-existent user: valer200519","timestamp":"2025-05-31T10:39:19.022Z"}
-{"level":"warn","message":"Login attempt for non-existent user: fsaasfsa","timestamp":"2025-05-31T10:40:26.273Z"}
-{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-05-31T10:45:38.486Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:47:48.045Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:53:14.405Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:54:07.803Z"}
-{"level":"error","message":"Database connection error: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections","stack":"MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections\n    at NativeConnection.createClient (C:\\Users\\valer\\OneDrive\\Рабочий стол\\Node.js\\myProjects\\webshop\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\connection.js:250:13)\n    at NativeConnection.openUri (C:\\Users\\valer\\OneDrive\\Рабочий стол\\Node.js\\myProjects\\webshop\\node_modules\\mongoose\\lib\\connection.js:1071:34)\n    at Mongoose.connect (C:\\Users\\valer\\OneDrive\\Рабочий стол\\Node.js\\myProjects\\webshop\\node_modules\\mongoose\\lib\\mongoose.js:446:15)\n    at connect (C:\\Users\\valer\\OneDrive\\Рабочий стол\\Node.js\\myProjects\\webshop\\Server\\db.ts:19:22)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-05-31T10:54:16.256Z"}
-{"level":"error","message":"Database connection error: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections","stack":"MongooseError: Can't call `openUri()` on an active connection with different connection strings. Make sure you aren't calling `mongoose.connect()` multiple times. See: https://mongoosejs.com/docs/connections.html#multiple_connections\n    at NativeConnection.createClient (C:\\Users\\valer\\OneDrive\\Рабочий стол\\Node.js\\myProjects\\webshop\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\connection.js:250:13)\n    at NativeConnection.openUri (C:\\Users\\valer\\OneDrive\\Рабочий стол\\Node.js\\myProjects\\webshop\\node_modules\\mongoose\\lib\\connection.js:1071:34)\n    at Mongoose.connect (C:\\Users\\valer\\OneDrive\\Рабочий стол\\Node.js\\myProjects\\webshop\\node_modules\\mongoose\\lib\\mongoose.js:446:15)\n    at connect (C:\\Users\\valer\\OneDrive\\Рабочий стол\\Node.js\\myProjects\\webshop\\Server\\db.ts:19:22)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-05-31T10:54:21.337Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:56:32.617Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:56:40.182Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:56:52.358Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:57:01.269Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:57:32.338Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:58:05.438Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:58:18.547Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:58:24.957Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:58:45.985Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:58:55.467Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:59:03.336Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:59:16.792Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:59:45.240Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T10:59:54.884Z"}
-{"level":"warn","message":"Validation error: \"password\" contains an invalid value","timestamp":"2025-05-31T11:00:11.539Z"}
-{"level":"warn","message":"Validation error: \"username\" length must be at least 3 characters long","timestamp":"2025-05-31T11:00:11.564Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T11:01:46.094Z"}
-{"level":"info","message":"User successfully registered: validuser","timestamp":"2025-05-31T11:01:52.464Z"}
-{"level":"warn","message":"Validation error: \"username\" length must be at least 3 characters long","timestamp":"2025-05-31T11:01:52.479Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T11:04:37.426Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T11:07:02.140Z"}
-{"level":"info","message":"User successfully registered: validuser","timestamp":"2025-05-31T11:07:30.871Z"}
-{"level":"warn","message":"Validation error: \"username\" length must be at least 3 characters long","timestamp":"2025-05-31T11:07:30.887Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T11:07:53.489Z"}
-{"level":"info","message":"User successfully registered: valer200519","timestamp":"2025-05-31T11:14:59.350Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T13:00:10.166Z"}
-{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-05-31T13:02:23.185Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T13:30:01.911Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-05-31T13:33:17.538Z"}
-{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-02T10:54:25.669Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:25:16.163Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:25:34.240Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:25:34.406Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:25:34.559Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:25:34.704Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:25:34.836Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:25:34.979Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:25:35.117Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:25:56.508Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:26:22.766Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:26:23.700Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:26:23.881Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:26:24.371Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:26:24.545Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T12:26:24.696Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-06-26T13:24:17.292Z"}
+{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-06-26T13:24:57.983Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:27:50.130Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:27:50.156Z"}
+{"level":"info","message":"Product \"t-shirt\" created successfully","timestamp":"2025-06-26T13:27:50.206Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:34:53.915Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:34:53.918Z"}
+{"level":"info","message":"Product \"product\" created successfully","timestamp":"2025-06-26T13:34:53.923Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-26T13:36:21.953Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-26T13:37:40.025Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:40.113Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:40.126Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:40.130Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:40.135Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:40.142Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:40.165Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:40.170Z"}
+{"level":"info","message":"Product \"product\" created successfully","timestamp":"2025-06-26T13:37:40.180Z"}
+{"level":"info","message":"Product \"product\" created successfully","timestamp":"2025-06-26T13:37:40.183Z"}
+{"level":"info","message":"Product \"product\" created successfully","timestamp":"2025-06-26T13:37:40.186Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:40.190Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:40.197Z"}
+{"level":"info","message":"Product \"product\" created successfully","timestamp":"2025-06-26T13:37:40.210Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:40.212Z"}
+{"level":"info","message":"Product \"product\" created successfully","timestamp":"2025-06-26T13:37:40.223Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:50.245Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:50.248Z"}
+{"level":"info","message":"Product 685d4d244daa2b38f687dedf removal was successful","timestamp":"2025-06-26T13:37:50.275Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:50.844Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:50.846Z"}
+{"level":"info","message":"Product 685d4d244daa2b38f687dedd removal was successful","timestamp":"2025-06-26T13:37:50.849Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:51.187Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:51.189Z"}
+{"level":"info","message":"Product 685d4d244daa2b38f687deda removal was successful","timestamp":"2025-06-26T13:37:51.192Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:52.070Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:52.072Z"}
+{"level":"info","message":"Product 685d4d244daa2b38f687ded8 removal was successful","timestamp":"2025-06-26T13:37:52.074Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:52.576Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:52.578Z"}
+{"level":"info","message":"Product 685d4d244daa2b38f687ded6 removal was successful","timestamp":"2025-06-26T13:37:52.581Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:37:53.207Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:37:53.209Z"}
+{"level":"info","message":"Product 685d4c7d97decbe223677522 removal was successful","timestamp":"2025-06-26T13:37:53.212Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:39:18.708Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:39:18.711Z"}
+{"level":"info","message":"Product \"tshirt\" created successfully","timestamp":"2025-06-26T13:39:18.752Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:40:49.075Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:40:49.077Z"}
+{"level":"info","message":"Product \"tshirt\" created successfully","timestamp":"2025-06-26T13:40:49.125Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:41:35.734Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:41:35.737Z"}
+{"level":"info","message":"Product \"tshirt\" created successfully","timestamp":"2025-06-26T13:41:35.812Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:41:36.470Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:41:36.473Z"}
+{"level":"info","message":"Product \"tshirt\" created successfully","timestamp":"2025-06-26T13:41:36.511Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:41:36.662Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:41:36.663Z"}
+{"level":"info","message":"Product \"tshirt\" created successfully","timestamp":"2025-06-26T13:41:36.725Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-26T13:41:36.808Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-26T13:41:36.810Z"}
+{"level":"info","message":"Product \"tshirt\" created successfully","timestamp":"2025-06-26T13:41:36.850Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T11:53:47.953Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-30T11:55:38.337Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-30T11:55:38.373Z"}
+{"level":"info","message":"Product \"fsafasfas\" created successfully","timestamp":"2025-06-30T11:55:38.444Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T11:57:45.973Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T11:57:58.644Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T11:58:10.005Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T11:58:33.487Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T11:58:42.077Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T11:58:52.410Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T11:59:05.460Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T11:59:34.604Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-30T12:00:45.369Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-30T12:00:45.373Z"}
+{"level":"info","message":"Product \"fassfafsa\" created successfully","timestamp":"2025-06-30T12:00:45.422Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1750944297,\"exp\":1751635497}","timestamp":"2025-06-30T12:06:20.035Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-06-30T12:06:20.038Z"}
+{"level":"info","message":"Product \"affas\" created successfully","timestamp":"2025-06-30T12:06:20.075Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:19:27.248Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:19:32.230Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:23:35.440Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:23:45.687Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:25:10.686Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:25:23.334Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:25:36.852Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:47:14.348Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:47:34.021Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-06-30T12:48:22.061Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-08T12:23:38.194Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-08T12:23:58.220Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-08T12:33:57.640Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-08T12:37:03.617Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-07-08T13:17:27.992Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-08T13:18:05.513Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-07-08T13:19:01.799Z"}
+{"level":"warn","message":"Invalid password attempt for user: sfasfasga","timestamp":"2025-07-08T13:22:28.515Z"}
+{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-07-08T13:22:47.308Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:36.426Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:36.460Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:36.549Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:38.555Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:38.558Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:38.598Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:38.834Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:38.838Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:38.875Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:39.009Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:39.012Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:39.046Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:39.171Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:39.174Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:39.227Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:39.373Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:39.375Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:39.410Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:39.500Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:39.502Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:39.561Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:39.681Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:39.684Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:39.721Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:39.867Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:39.870Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:39.925Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:23:39.991Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:23:39.994Z"}
+{"level":"info","message":"Product \"fsafsa\" created successfully","timestamp":"2025-07-08T13:23:40.047Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-08T13:24:41.514Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-08T13:24:41.517Z"}
+{"level":"info","message":"Product \"asfasf asfa sas\" created successfully","timestamp":"2025-07-08T13:24:41.584Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-14T12:10:55.216Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:22:47.447Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:22:47.498Z"}
+{"level":"info","message":"Product 686d1bda9e5ebb571533a538 removal was successful","timestamp":"2025-07-14T12:22:47.536Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:22:56.044Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:22:56.099Z"}
+{"level":"info","message":"Product 68627b3a61db6de2226d8391 removal was successful","timestamp":"2025-07-14T12:22:56.345Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:23:04.563Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:23:04.624Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:23:06.359Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:23:06.364Z"}
+{"level":"info","message":"Product 686d1c199e5ebb571533a553 removal was successful","timestamp":"2025-07-14T12:23:06.407Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:23:13.779Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:23:13.820Z"}
+{"level":"info","message":"Product 686d1bdb9e5ebb571533a550 removal was successful","timestamp":"2025-07-14T12:23:14.275Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:24:06.926Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:24:06.930Z"}
+{"level":"info","message":"Product 686d1bdb9e5ebb571533a541 removal was successful","timestamp":"2025-07-14T12:24:06.948Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:24:12.387Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:24:12.495Z"}
+{"level":"info","message":"Product 686d1bdb9e5ebb571533a54d removal was successful","timestamp":"2025-07-14T12:24:12.960Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:24:20.980Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:24:20.984Z"}
+{"level":"info","message":"Product 686d1bdb9e5ebb571533a547 removal was successful","timestamp":"2025-07-14T12:24:20.999Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:24:26.200Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:24:26.207Z"}
+{"level":"info","message":"Product 686d1bdb9e5ebb571533a54a removal was successful","timestamp":"2025-07-14T12:24:26.244Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:27:58.011Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:27:58.017Z"}
+{"level":"warn","message":"Validation error: \"color\" is not allowed to be empty","timestamp":"2025-07-14T12:27:58.025Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:29:27.479Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:29:27.481Z"}
+{"level":"info","message":"Product \"fsafsafas\" created successfully","timestamp":"2025-07-14T12:29:27.506Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:32:50.872Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:32:50.876Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:32:50.878Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:18.819Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:18.821Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:18.822Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:19.560Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:19.562Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:19.562Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:19.852Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:19.853Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:19.854Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:20.049Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:20.051Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:20.051Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:20.214Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:20.215Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:20.216Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:20.932Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:20.934Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:20.934Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:21.103Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:21.105Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:21.106Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:21.270Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:21.272Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:21.273Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:21.413Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:21.415Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:21.415Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:21.708Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:21.710Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:21.711Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:22.518Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:22.519Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:22.520Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:23.341Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:23.343Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:23.344Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:24.057Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:24.059Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:24.059Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:24.950Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:24.951Z"}
+{"level":"warn","message":"Validation error: \"image\" is not allowed to be empty","timestamp":"2025-07-14T12:34:24.951Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:34:35.213Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:34:35.215Z"}
+{"level":"info","message":"Product \"safasfasf\" created successfully","timestamp":"2025-07-14T12:34:35.226Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:35:18.284Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:35:18.286Z"}
+{"level":"info","message":"Product \"fadfasasf\" created successfully","timestamp":"2025-07-14T12:35:18.297Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-14T12:39:04.651Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-14T12:39:04.653Z"}
+{"level":"info","message":"Product \"sfafsa\" created successfully","timestamp":"2025-07-14T12:39:04.666Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-14T12:59:45.301Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-15T12:13:21.893Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:17:06.382Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:17:06.392Z"}
+{"level":"info","message":"Product \"adfassfa\" created successfully","timestamp":"2025-07-15T12:17:06.425Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:19:24.459Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:19:24.463Z"}
+{"level":"info","message":"Product \"adfassfa\" created successfully","timestamp":"2025-07-15T12:19:24.478Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:20:56.762Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:20:56.765Z"}
+{"level":"info","message":"Product \"adfassfa\" created successfully","timestamp":"2025-07-15T12:20:56.775Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:22:03.300Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:22:03.302Z"}
+{"level":"info","message":"Product \"fsaf\" created successfully","timestamp":"2025-07-15T12:22:03.314Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:30:58.732Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:30:58.736Z"}
+{"level":"info","message":"Product \"fsafas\" created successfully","timestamp":"2025-07-15T12:30:58.762Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:49:16.416Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:49:16.419Z"}
+{"level":"info","message":"Product \"asfaa\" created successfully","timestamp":"2025-07-15T12:49:16.426Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:49:17.643Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:49:17.645Z"}
+{"level":"info","message":"Product \"asfaa\" created successfully","timestamp":"2025-07-15T12:49:17.648Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:49:17.886Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:49:17.888Z"}
+{"level":"info","message":"Product \"asfaa\" created successfully","timestamp":"2025-07-15T12:49:17.892Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:49:18.064Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:49:18.066Z"}
+{"level":"info","message":"Product \"asfaa\" created successfully","timestamp":"2025-07-15T12:49:18.070Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:49:18.336Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:49:18.338Z"}
+{"level":"info","message":"Product \"asfaa\" created successfully","timestamp":"2025-07-15T12:49:18.342Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T12:50:04.779Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T12:50:04.781Z"}
+{"level":"info","message":"Product \"asfaa\" created successfully","timestamp":"2025-07-15T12:50:04.785Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:12:43.178Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:12:43.182Z"}
+{"level":"info","message":"Product \"zcaasfasf\" created successfully","timestamp":"2025-07-15T13:12:43.198Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:14:40.097Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:14:40.100Z"}
+{"level":"info","message":"Product \"zcaasfasf\" created successfully","timestamp":"2025-07-15T13:14:40.110Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:19:08.528Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:19:08.530Z"}
+{"level":"info","message":"Product \"sadfafasfasf\" created successfully","timestamp":"2025-07-15T13:19:08.535Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:19:15.589Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:19:15.591Z"}
+{"level":"info","message":"Product \"sadfafasfasf\" created successfully","timestamp":"2025-07-15T13:19:15.595Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:23:07.074Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:23:07.076Z"}
+{"level":"warn","message":"Validation error: \"price\" must be less than or equal to 10000000","timestamp":"2025-07-15T13:23:07.079Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:23:21.759Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:23:21.761Z"}
+{"level":"warn","message":"Validation error: \"price\" must be less than or equal to 10000000","timestamp":"2025-07-15T13:23:21.762Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:23:22.144Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:23:22.145Z"}
+{"level":"warn","message":"Validation error: \"price\" must be less than or equal to 10000000","timestamp":"2025-07-15T13:23:22.147Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:23:24.014Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:23:24.016Z"}
+{"level":"info","message":"Product \"fassfa\" created successfully","timestamp":"2025-07-15T13:23:24.025Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:24:06.788Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:24:06.790Z"}
+{"level":"info","message":"Product \"afsfasafsfas\" created successfully","timestamp":"2025-07-15T13:24:06.800Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:29:17.140Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:29:17.143Z"}
+{"level":"info","message":"Product \"asfasffas\" created successfully","timestamp":"2025-07-15T13:29:17.157Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:39:34.471Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:39:34.481Z"}
+{"level":"info","message":"Product \"asffasf\" created successfully","timestamp":"2025-07-15T13:39:34.517Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:39:37.124Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:39:37.133Z"}
+{"level":"info","message":"Product \"asffasf\" created successfully","timestamp":"2025-07-15T13:39:37.174Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:39:37.195Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:39:37.201Z"}
+{"level":"info","message":"Product \"asffasf\" created successfully","timestamp":"2025-07-15T13:39:37.234Z"}

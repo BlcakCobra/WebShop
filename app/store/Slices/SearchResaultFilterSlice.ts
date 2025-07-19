@@ -7,9 +7,9 @@ import { SearchAnythingSliceType } from "../../types/SearchSliceType";
 
 export const AsyncSearchResultFilterSlice = createAsyncThunk(
   "AsyncSearchResaultFilterSlice",
-  async (params: SearchFilterParams, { rejectWithValue }) => {
+  async ({params,page}:{params: SearchFilterParams,page:number}, { rejectWithValue }) => {
     try {
-      const res = await RequestesToServer.SearchResultFilter(params);
+      const res = await RequestesToServer.SearchResultFilter(params,page);
       return res;
     } catch (error) {
       return rejectWithValue("Произошла ошибка при получении данных.");
@@ -28,9 +28,9 @@ type initialStateType = {
   sort: "newest" | "rating_desc" | "price_desc" | "price_asc" | "oldest" | "";
   discount:boolean
   rating:number
-  page: number;
-  totalPages: number;
-  totalItems: number;
+  filteredPage: number;
+  filteredTotalItems: number;
+  filteredTotalPages: number;
 };
 
 const initialState: initialStateType = {
@@ -44,9 +44,9 @@ const initialState: initialStateType = {
   sort:"",
   discount:false,
   rating:0,
-  page:0,
-  totalItems:0,
-  totalPages:0
+  filteredPage:0,
+  filteredTotalItems:0,
+  filteredTotalPages:0
   
 };
 
@@ -84,6 +84,9 @@ const initialState: initialStateType = {
       state.rating = 0;
       state.discount = false;
     },
+    setCurrentFilteredPage(state,action){
+      state.filteredPage = action.payload
+    },
     setFilteredResult: (state, action: PayloadAction<SearchAnythingSliceType>) => {
       state.filterdResault = action.payload;
     },
@@ -96,9 +99,9 @@ const initialState: initialStateType = {
       .addCase(AsyncSearchResultFilterSlice.fulfilled, (state, action) => {
         state.loading = false;
         state.filterdResault = action.payload;
-        state.page = action.payload.page;
-        state.totalPages = action.payload.totalPages;
-        state.totalItems = action.payload.totalItems;
+        state.filteredPage = action.payload.page;
+        state.filteredTotalPages = action.payload.totalPages;
+        state.filteredTotalItems = action.payload.totalItems;
       })
       .addCase(AsyncSearchResultFilterSlice.rejected, (state, action) => {
         state.loading = false;
@@ -108,5 +111,5 @@ const initialState: initialStateType = {
   
 });
 
-export const {  resetFilters, setPriceTo,setPriceFrom,setSortValue,setSex,setDiscount,setType,setRating } = FilterSearchedProductSlice.actions;
+export const {  resetFilters, setPriceTo,setPriceFrom,setSortValue,setSex,setDiscount,setType,setRating,setCurrentFilteredPage } = FilterSearchedProductSlice.actions;
 export default FilterSearchedProductSlice.reducer;

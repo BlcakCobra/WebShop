@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link';
 import { useAppSelector } from '../../store/store'; 
 import { useRouter } from 'next/navigation';
-import { images } from '../../Images/images';
+import { imagesSite } from '../../Images/images';
 
 import styles from "./Profile.module.css"
 import { NavProfileType } from '../../types/ComponentsType';
@@ -12,7 +12,10 @@ import { useClickOutside } from '../../OwnHooks/useClickOutside';
 const NavProfile:React.FC<NavProfileType> = ({openSettingsMenuProfile,settingsMenuProfile}) =>{ 
 
     const [isClient, setIsClient] = useState(false);
-    const default_avatar = images.default_avatar
+    const [showProfile, setShowProfile] = useState(false);
+    const wrapperRef = useRef<HTMLDivElement>(null);
+
+    const default_avatar = imagesSite.default_avatar
 
     useEffect(() => {
       setIsClient(true);
@@ -22,12 +25,11 @@ const NavProfile:React.FC<NavProfileType> = ({openSettingsMenuProfile,settingsMe
 
     const router = useRouter();
 
-    const [showProfile, setShowProfile] = useState(false);
-    const wrapperRef = useRef<HTMLDivElement>(null);
+
   
     useClickOutside(wrapperRef, () => setShowProfile(false));
 
-
+    
     const logout = () => {
         if(token){
           if (typeof window !== 'undefined' && isClient) {
@@ -60,7 +62,7 @@ const NavProfile:React.FC<NavProfileType> = ({openSettingsMenuProfile,settingsMe
                   </ul>
                 </div>
               )}
-              {settingsMenuProfile && !token &&(
+              {showProfile && !token &&(
                 <div className={styles.settingsMenu}>
                   <ul>
                   <li><Link href="/login" className={styles.a} >Login</Link></li>

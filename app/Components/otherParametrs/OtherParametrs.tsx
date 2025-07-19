@@ -1,9 +1,8 @@
 "use client"
 import React, { useEffect } from 'react';
 import styles from "./OtherParametrs.module.css";
-import { useAppDispatch, useAppSelector } from '../../store/store';
+import {  useAppSelector } from '../../store/store';
 import { OtherParametrsTypes } from '../../types/ComponentsType';
-import { AsyncProductSlice } from '../../store/Slices/CreateProductSlice';
 
 const OtherParametrs: React.FC<OtherParametrsTypes> = ({ 
   handleChangeSexValue,
@@ -14,21 +13,14 @@ const OtherParametrs: React.FC<OtherParametrsTypes> = ({
   handleChangePrice
 }) => {
   const product = useAppSelector((state) => state.ProductSlice.product);
+
   
   const name = product?.name || "";
   const sex = product?.sex || "";
   const type = product?.type || "";
-  const image = product?.image || "";
   const color = product?.color || "";
   const size = product?.size || "";
   const price = product?.price || "";
-  const discount = product?.discount || "";
-  const rating = product?.rating || 0;
-  const views = product?.views || 0;
-
-  const { isAdmin } = useAppSelector(state => state.login);
-
-  const dispatch = useAppDispatch();
 
   const clothingTypes = [
     "t-shirts", "blouses", "shirts", "hoodies", "sweatshirts", "tank tops", 
@@ -43,33 +35,9 @@ const OtherParametrs: React.FC<OtherParametrsTypes> = ({
   ];
   const clothingSize = ["S", "M", "L", "XL", "XXL" ];
 
-  const token = localStorage.getItem("token");
 
-  const handleAddProduct = () => {
-    if (!isAdmin || !token || !sex || !type || !price || !size || !color) {
-      console.warn("Product data is incomplete:", { sex, type, price, size, color });
-      return;
-    }
-  
-    const productData = {
-      name,
-      sex,
-      type,
-      image,
-      color,
-      size,
-      price,
-      discount: discount || 0,
-      rating: rating || 0,
-      views: views || 0,
-    };
-  
-    dispatch(AsyncProductSlice({ token, productData }));
-    console.log("Add Prod");
-  };
-  useEffect(() =>{
-    console.log("123");
-  },[])
+
+
   return (
     <div className={styles.otherParametrs}>
       <input

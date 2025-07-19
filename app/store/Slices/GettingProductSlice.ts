@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import {RequestesToServer} from "./../../api/api"
-import { ProductType } from "../../types/ProductSliceType";
+import { ProductType, ProductTypeWithId } from "../../types/ProductSliceType";
 
 export const AsyncGettingProductSlice = createAsyncThunk(
     "AsyncGettingProductSlice",
@@ -16,9 +16,6 @@ export const AsyncGettingProductSlice = createAsyncThunk(
        }
     }
 )   
-    interface ProductTypeWithId extends ProductType{
-        _id: string;
-    }
 
     interface initialStateType{
         products:null | ProductTypeWithId[],

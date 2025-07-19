@@ -29,6 +29,7 @@ type InitialStateType = {
   searchQuery:string | ""
   chooseWhichArr: "five" | "all" | ""
   currentPage?: number ;
+  page:number
 };
 
 const initialState: InitialStateType = {
@@ -37,7 +38,8 @@ const initialState: InitialStateType = {
   loading: false,
   searchQuery:"",
   chooseWhichArr: "",
-  currentPage:1
+  currentPage:1,
+  page:1
 };
 
 const SearchAnythingSlice = createSlice({

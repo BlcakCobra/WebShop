@@ -21,7 +21,6 @@ export const createProductController = async (req: Request, res: Response, next:
 
         const { _id, ...rest } = savedProduct.toObject();
         res.status(201).json({ id: _id, ...rest });
-
         logger.info(`Product "${name}" created successfully`);
     } catch (error: unknown) {
         if (error instanceof mongoose.Error && "code" in error && error.code === 11000) {

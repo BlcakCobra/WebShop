@@ -11,3 +11,7 @@ export interface SearchFilterParams {
   discount?:"true" | "false";
   rating?: number;
 }
+export interface SearchFilterParamsForRequest{
+    params:SearchFilterParams,
+    page:number
+}

@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+
 
 export type ClothingType =
   | "t-shirts" | "blouses" | "shirts" | "hoodies" | "sweatshirts" | "tank tops"
@@ -30,5 +30,9 @@ export interface ProductType {
   rating: number;
   views: number;
 }
+
+    export interface ProductTypeWithId extends ProductType{
+        id?: string;
+    }
 
 export type FilteredProductType = Omit<ProductType, "loading" | "error">;

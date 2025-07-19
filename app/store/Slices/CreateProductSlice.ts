@@ -1,19 +1,20 @@
 import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
-import { ProductType, ClothingSize, ClothingType } from "../../types/ProductSliceType";
+import { ProductType, ClothingSize, ClothingType, ProductTypeWithId } from "../../types/ProductSliceType";
 import { RequestesToServer } from "../../api/api";
-import { setProductId } from "./CreateProductDetailsSlice";
 
 interface initialStateType {
-  product: ProductType;
+  product: ProductTypeWithId;
   loading: boolean;
   error: string | undefined;
+  idForDetails: string | undefined;
 }
 
 const initialState: initialStateType = {
   product: {
-    name:"",
+    id: "",
+    name: "",
     sex: "",
-    type: "", 
+    type: "",
     image: "",
     color: "",
     size: "",
@@ -24,21 +25,19 @@ const initialState: initialStateType = {
   },
   loading: false,
   error: undefined,
+  idForDetails: ""
 };
 
 export const AsyncProductSlice = createAsyncThunk(
   "AsyncProductSlice",
-  async (args: { token: string; productData: ProductType }, {dispatch, rejectWithValue }) => {
+  async (args: { token: string; productData: ProductTypeWithId }, { dispatch, rejectWithValue }) => {
     const { token, productData } = args;
     try {
       const res = await RequestesToServer.CreateProductReq(token, productData);
-      if (res.status !== 200) {
+      if (res.status < 200 || res.status >= 300) {
         throw new Error(`Product creation failed with status ${res.status}`);
       }
-        dispatch(setProductId(res.data.id));
-
-        return res.data;
-      
+      return res.data;
     } catch (error: any) {
       return rejectWithValue(error.message);
     }
@@ -50,39 +49,25 @@ const ProductSlice = createSlice({
   initialState,
   reducers: {
     updateImage: (state, action: PayloadAction<string>) => {
-      if (state.product) {
-        state.product.image = action.payload;
-      }
+      state.product.image = action.payload;
     },
     selectSex: (state, action: PayloadAction<"Man" | "Woman" | "Other">) => {
-      if (state.product) {
-        state.product.sex = action.payload;
-      }
+      state.product.sex = action.payload;
     },
     selectName: (state, action: PayloadAction<string>) => {
-      if (state.product) {
-        state.product.name = action.payload;
-      }
+      state.product.name = action.payload;
     },
     selectClothsType: (state, action: PayloadAction<ClothingType>) => {
-      if (state.product) {
-        state.product.type = action.payload;
-      }
+      state.product.type = action.payload;
     },
     selectClothsSize: (state, action: PayloadAction<ClothingSize>) => {
-      if (state.product) {
-        state.product.size = action.payload;
-      }
+      state.product.size = action.payload;
     },
     selectColor: (state, action: PayloadAction<string>) => {
-      if (state.product) {
-        state.product.color = action.payload;
-      }
+      state.product.color = action.payload;
     },
     setPrice: (state, action: PayloadAction<number>) => {
-      if (state.product) {
-        state.product.price = action.payload;
-      }
+      state.product.price = action.payload;
     },
     resetProduct: (state) => {
       state.product = { ...initialState.product };
@@ -94,11 +79,15 @@ const ProductSlice = createSlice({
         state.loading = true;
         state.error = undefined;
       })
-      .addCase(AsyncProductSlice.fulfilled, (state, action: PayloadAction<ProductType>) => {
+      .addCase(AsyncProductSlice.fulfilled, (state, action: PayloadAction<ProductTypeWithId>) => {
+         if (action.payload) {
+            state.product = action.payload;
+          }
         state.loading = false;
-        state.product = action.payload;
+        state.product = action.payload; 
       })
       .addCase(AsyncProductSlice.rejected, (state, action) => {
+        console.log("❌ Ошибка при создании продукта:", action.error.message);
         state.loading = false;
         state.error = action.error.message || "Что-то пошло не так";
       });
@@ -106,6 +95,7 @@ const ProductSlice = createSlice({
 });
 
 export default ProductSlice.reducer;
+
 export const {
   updateImage,
   selectSex,

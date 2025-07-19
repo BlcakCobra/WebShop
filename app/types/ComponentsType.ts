@@ -1,5 +1,6 @@
 import { ChangeEvent, HTMLInputTypeAttribute } from "react";
-import { ProductType } from "./ProductSliceType";
+import { ClothingSize, ProductType } from "./ProductSliceType";
+import { ColorForDetails } from "./ProductDetails";
 
 export interface BurgerType {
     isOpen:boolean,
@@ -43,4 +44,30 @@ export interface UpdateProductType {
 export interface MapForProductsType {
     [x: string]: any;
     productsList:ProductType[] | undefined | null
+}
+
+
+
+export interface MenuForCreateDetailType {
+    setFlipped: (value: boolean) => void;
+    closeMenuForCreateItem: () => void;
+    flipped:boolean
+    token: string | null
+    setLocalImages: React.Dispatch<React.SetStateAction<File[]>>;
+    localImages:File[]
+    
+}
+
+
+
+export interface MultiSelectExampleType {
+  options: string[];
+  value: string[];
+  onChange: (selected: string[]) => void;
+  label: string;
+}
+
+export interface SelectFewImagesProps {
+  images: File[];
+  handleImagesUpload: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }

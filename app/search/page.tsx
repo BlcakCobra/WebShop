@@ -7,20 +7,48 @@ import { useEffect, useState } from 'react';
 import FilterSearchedProduct from '../Components/FilterSearchedProduct/FilterSearchedProduct';
 import Pagination from '../Components/Pagination/Pagination';
 import MapForProducts from '../Components/MapForProducts/MapForProducts';
+import { AsyncSearchResultFilterSlice, setCurrentFilteredPage } from '../store/Slices/SearchResaultFilterSlice';
 
 
 export default function SearchResults() {
+
+
   const searchParams = useSearchParams();
+
   const query = searchParams.get('query') || '';
-  const router = useRouter();
+
   const dispatch = useAppDispatch();
-  const { someSearchResults,currentPage } = useAppSelector(state => state.SearchAnythingSlice);
-  const {filterdResault} = useAppSelector(state => state.FilterSearchedProductSlice)
+
+  const { someSearchResults,page,currentPage } = useAppSelector(state => state.SearchAnythingSlice);
+  const {filterdResault,filteredPage,filteredTotalItems,filteredTotalPages}  = useAppSelector(state => state.FilterSearchedProductSlice)
   const [hasSearched, setHasSearched] = useState(false);
+ const {
+    priceFrom,
+    priceTo,
+    sex,
+    sort,
+    type,
+    rating,
+    discount,
+  } = useAppSelector((state) => state.FilterSearchedProductSlice);
 
   const handlePageChange = (page: number) => {
+    if(filterdResault?.products?.length){
+      dispatch(setCurrentFilteredPage(page))
+      dispatch(AsyncSearchResultFilterSlice({params: {
+      sort,
+      priceFrom,
+      priceTo,
+      sex,
+      discount: discount !== undefined ? String(discount) as "true" | "false" : undefined,
+      type,
+      rating,
+    },page}))
+    }
+    if(someSearchResults?.products?.length){
     dispatch(setCurrentPage(page));
-    dispatch(AsyncSearchAnythingSlice({ searchQuery: query, page }));
+    dispatch(AsyncSearchAnythingSlice({ searchQuery: query, page }))
+  }
   };
   
   
@@ -50,6 +78,7 @@ const productsToPagination = () => {
   }
   return 1;
 }
+
   return (
     <div>
       <h1>Результаты поиска для: {query}</h1>
@@ -64,6 +93,7 @@ const productsToPagination = () => {
       <Pagination
     pageCount={productsToPagination() ?? 1}
     onPageChange={handlePageChange}
+    
 />
 
     </div>

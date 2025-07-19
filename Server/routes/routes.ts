@@ -12,19 +12,22 @@ import { getProductById } from '../Controller/getProductById';
 import { createProductDetailsController } from '../Controller/createProductDetailsController';
 import { SearchAnyProductController } from '../Controller/SearchAnyProductController';
 import { filterSearchedProducts } from '../Controller/controllerForProducts/filterSearchedProductsController';
+import { upload } from '../middleWeare/multer';
 
 const router = Router();
-
 router.post('/register', registerControl);
-router.post('/refresh-token',refreshToken);
+router.post('/refresh-token', refreshToken);
 router.post('/login', loginControll);
 router.get("/getAllProducts", getProductsController);
-router.post("/createProducts",isAdmin, createProductController);
-router.put("/updateProduct/:id",isAdmin, updateProductController);
-router.delete("/deleteProduct/:id",isAdmin, deleteProductController);
+router.post("/createProducts", isAdmin, createProductController);
+router.put("/updateProduct/:id", isAdmin, updateProductController);
+router.delete("/deleteProduct/:id", isAdmin, deleteProductController);
 router.get('/productType/:type', ProductsWithSpecificType);
 router.get("/product/:id", getProductById);
-router.post("/createProductDetails/:productId",isAdmin,createProductDetailsController)
-router.get("/searchAnything",SearchAnyProductController)
-router.get("/searchResaultFilter",filterSearchedProducts)
+router.post("/createProductDetails", isAdmin, upload.array("images", 5), createProductDetailsController);
+router.get("/searchAnything", SearchAnyProductController)
+router.get("/searchResaultFilter", filterSearchedProducts)
+router.get("/recommendationForDetails:productId")
+
+
 export default router;

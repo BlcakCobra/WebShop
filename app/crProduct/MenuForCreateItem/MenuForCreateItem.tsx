@@ -13,18 +13,18 @@ import {
   setPrice,
 } from "../../store/Slices/CreateProductSlice";
 import { useAppDispatch, useAppSelector } from "../../store/store";
-import { images } from "../../Images/images";
-
-
-
-
-
+import { imagesSite } from "../../Images/images";
+import MenuForCreateDetail from "../MenuForCreateDetails/MenuForCreateDetails";
 
 export default function MenuForCreateItem({
   menuForCreateItem,
   setMenuForCreateItem,
   setErrorMessage,
   handleSubmit,
+  token,
+  setLocalImages,
+  localImages
+
 }: MenuForCreateItemProps) {
   const dispatch = useAppDispatch();
   const [flipped, setFlipped] = useState(false);
@@ -66,64 +66,59 @@ export default function MenuForCreateItem({
           <div className={styles.overlay} onClick={closeMenuForCreateItem}></div>
           <div className={styles.container}>
             <div className={`${styles.card} ${flipped ? styles.flipped : ""}`}>
-              <form
-                className={styles.front}
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  handleSubmit();
-                }}
-              >
-                <button
-                  type="button"
-                  className={styles.closeMenu}
-                  onClick={closeMenuForCreateItem}
+              
+              <div className={styles.front}>
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    handleSubmit();
+                  }}
                 >
-                  ×
-                </button>
-                <h2>Create Product</h2>
-                <p>Add details for new Product</p>
-                <div className={styles.menuContent}>
-                  <ImportImageInput
-                    handleImageUpload={handleImageUpload}
-                    image={image}
-                  />
-                  <OtherParametrs
-                    handleChangeSexValue={handleChange(selectSex)}
-                    handleChangeClothingTypeValue={handleChange(selectClothsType)}
-                    handlePickColor={handleChange(selectColor)}
-                    handleChangeClothingTypeSize={handleChange(selectClothsSize)}
-                    handleChangePrice={handleChange(setPrice)}
-                    handleChangeName={handleChange(selectName)}
-                  />
-                </div>
-                <button
-                  type="button"
-                  className={styles.flipButton}
-                  onClick={() => setFlipped(true)}
-                >
-                  <img src={images.arrowRight.src} alt="arrowRight" className={styles.arrowRight} />
-                </button>
-              </form>
-
-              <div className={styles.back}>
-                <button
-                  type="button"
-                  className={styles.closeMenu}
-                  onClick={closeMenuForCreateItem}
-                >
-                  ×
-                </button>
-
-
-                
-                <button
-                  type="button"
-                  className={styles.flipButton}
-                  onClick={() => setFlipped(false)}
-                >
-                  <img src={images.arrowLeft.src} alt="arrowLeft"  className={styles.arrowLeft}/>
-                </button>
+                  <button
+                    type="button"
+                    className={styles.closeMenu}
+                    onClick={closeMenuForCreateItem}
+                  >
+                    ×
+                  </button>
+                  <h2>Create Product</h2>
+                  <p>Add details for new Product</p>
+                  <div className={styles.menuContent}>
+                    <ImportImageInput
+                      handleImageUpload={handleImageUpload}
+                      image={image}
+                    />
+                    <OtherParametrs
+                      handleChangeSexValue={handleChange(selectSex)}
+                      handleChangeClothingTypeValue={handleChange(selectClothsType)}
+                      handlePickColor={handleChange(selectColor)}
+                      handleChangeClothingTypeSize={handleChange(selectClothsSize)}
+                      handleChangePrice={handleChange(setPrice)}
+                      handleChangeName={handleChange(selectName)}
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    className={styles.flipButton}
+                    onClick={() => setFlipped(true)}
+                  >
+                    <img
+                      src={imagesSite.arrowRight.src}
+                      alt="arrowRight"
+                      className={styles.arrowRight}
+                    />
+                  </button>
+                </form>
               </div>
+
+              <MenuForCreateDetail
+                setFlipped={setFlipped}
+                flipped={flipped}
+                closeMenuForCreateItem={closeMenuForCreateItem}
+                token={token}
+                setLocalImages={setLocalImages}
+                localImages={localImages}
+              />
             </div>
           </div>
         </>

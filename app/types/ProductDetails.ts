@@ -1,17 +1,23 @@
+import { ClothingSize } from "./ProductSliceType";
+
+export type ColorForDetails = (
+  | "Black" | "White" | "Red" | "Green" | "Blue" | "Yellow" | "Orange" | "Purple" | "Pink" | "Brown" | "Gray" | "Beige" | "Cyan" | "Magenta" | "Lime" | "Olive"
+  | "Navy" | "Teal" | "Maroon" | "Gold" | "Silver" | "Turquoise" | "Coral" | "Indigo" | "Violet" | ""
+)[];
+
+
 export type ProductDetailsType = {
     productId: string; 
     description: string;
-    images: string[];
-    reviews?: {
-        user: string;
-        rating: number;
-        comment?: string;
-    }[];
-    specifications?: Record<string, string | number>;
-    subjectSizes: ("S" | "M" | "L" | "XL" | "XXL")[];
-    subjectColors: string[];
+    images: File[];
+    // reviews?: {
+    //     user: string;
+    //     rating: number;
+    //     comment?: string;
+    // }[];
+    subjectSizes: ClothingSize[];
+    subjectColors: ColorForDetails | [];
     stock: number;
-    relatedProducts?: string[];
     videoReview?: string;
     availableForPreorder?: boolean;
 };

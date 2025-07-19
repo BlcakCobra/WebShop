@@ -9,7 +9,8 @@ interface FilterQuery {
 
 export const filterSearchedProducts = async (req: Request, res: Response) => {
   try {
-    const {
+    
+  const {
       page = "1",
       limit = "10",
       sort,
@@ -20,6 +21,7 @@ export const filterSearchedProducts = async (req: Request, res: Response) => {
       discount,
       rating,
     }: ServerSearchFilterParams = req.query;
+
 
     const pageNum = Math.max(parseInt(page as string, 10), 1);
     const limitNum = Math.min(Math.max(parseInt(limit as string, 10), 1), 50);
@@ -75,8 +77,6 @@ if (
         break;
     }
 
-    console.log("Filters:", filters);
-    console.log("Sort option:", sortOption);
 
     const total = await Product.countDocuments(filters);
 
