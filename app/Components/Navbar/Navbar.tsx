@@ -1,71 +1,75 @@
 "use client";
 import Link from 'next/link';
-import React, { useEffect, useState, useCallback, useRef } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import styles from './Navbar.module.css';
 import { imagesSite } from "../../Images/images";
-import NavProfile from '../Profile/Profile';
-import Burger from '../Burger/Burger';
-import {AdminMenu} from '../ToAdminLi/AdminMenu';
+import UserProfile from '../Profile/Profile';
+import BurgerMenu from '../Burger/Burger';
+import { AdminMenu } from '../ToAdminLi/AdminMenu';
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import { checkIfAdmin } from '../../store/Slices/LoginSlice';
-import ClothingList from './ClothingList/ClothingList';
+import CategoryList from './ClothingList/ClothingList';
 import SearchBar from '../SearchBar/SearchBar';
 
-
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [settingsMenuAdmin, setSettingsMenuAdmin] = useState(false);
-  const [settingsMenuProfile, setSettingsMenuProfile] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAdminMenuOpen, setIsAdminMenuOpen] = useState(false);
+  const [isUserProfileMenuOpen, setIsUserProfileMenuOpen] = useState(false);
 
   const isAdmin = useAppSelector(state => state.login.isAdmin);
   const dispatch = useAppDispatch();
 
-  const openSettingsMenuAdmin = () => {
-    setSettingsMenuAdmin(prev => !prev);
-    setSettingsMenuProfile(false);
+  const toggleAdminMenu = () => {
+    setIsAdminMenuOpen(prev => !prev);
+    setIsUserProfileMenuOpen(false);
   };
 
-  const openSettingsMenuProfile = () => {
-    setSettingsMenuProfile(prev => !prev);
-    setSettingsMenuAdmin(false);
+  const toggleUserProfileMenu = () => {
+    setIsUserProfileMenuOpen(prev => !prev);
+    setIsAdminMenuOpen(false);
   };
 
-  const toggleMenu = useCallback(() => {
-    setIsOpen(prev => !prev);
+  const toggleMobileMenu = useCallback(() => {
+    setIsMenuOpen(prev => !prev);
   }, []);
 
   useEffect(() => {
     dispatch(checkIfAdmin());
-  }, []);
-
-
+  }, [dispatch]);
 
   return (
-    <div className={styles.navbar}>
-      <Link href="/">
-        <img src={imagesSite.logo.src} className={styles.logo} alt="Logo" />
-      </Link>
-      <nav className={styles.nav_item}>
-        <div className={styles.ElementNavbarBox}>
-          <ClothingList/>
-      </div>
-      </nav>
-      <div className={`${styles.menu} ${isOpen ? styles.active : ''}`}>
-        {isAdmin && (
-          <AdminMenu
-            isAdmin={isAdmin}
-            openSettingsMenuAdmin={openSettingsMenuAdmin}
-            settingsMenuAdmin={settingsMenuAdmin}
+    <header className={styles.navbar}>
+      <div className={styles.ContentBox}>
+        <Link href="/">
+          <img src={imagesSite.logo.src} className={styles.logo} alt="Logo" />
+        </Link>
+
+        <nav className={styles.nav}>
+          <ul className={styles.navItemBox}>
+            <li className={styles.navItems}>
+              <CategoryList />
+            </li>
+          </ul>
+        </nav>
+
+        <div className={`${styles.menu} ${isMenuOpen ? styles.active : ''}`}>
+          {isAdmin && (
+            <AdminMenu
+              isAdmin={isAdmin}
+              openSettingsMenuAdmin={toggleAdminMenu}
+              settingsMenuAdmin={isAdminMenuOpen}
+            />
+          )}
+          <SearchBar />
+          <UserProfile
+            openSettingsMenuProfile={toggleUserProfileMenu}
+            settingsMenuProfile={isUserProfileMenuOpen}
           />
-        )}
-        <SearchBar/>
-        <NavProfile
-          openSettingsMenuProfile={openSettingsMenuProfile}
-          settingsMenuProfile={settingsMenuProfile}
-        />
+        </div>
+
+        <BurgerMenu isOpen={isMenuOpen} toggleMenu={toggleMobileMenu} />
       </div>
-      <Burger isOpen={isOpen} toggleMenu={toggleMenu} />
-    </div>
+    </header>
   );
 };
 
