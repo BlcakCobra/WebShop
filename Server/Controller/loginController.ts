@@ -17,27 +17,27 @@ export const loginControll = async (req: Request, res: Response): Promise<void> 
         const user = await User.findOne({ username });
         if (!user) {
             logger.warn(`Login attempt for non-existent user: ${username}`);
-            res.status(404).json({ message: 'User not found' }); 
+            res.status(404).json({ message: 'User not found' });
             return;
         }
 
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (!isPasswordValid) {
             logger.warn(`Invalid password attempt for user: ${username}`);
-            res.status(401).json({ message: 'Invalid password' }); 
+            res.status(401).json({ message: 'Invalid password' });
             return;
         }
 
         const token = jwt.sign(
             { id: user._id, role: user.role },
             process.env.JWT_SECRET as string,
-            { expiresIn: '8d' } 
+            { expiresIn: '8d' }
         );
 
         const refreshToken = jwt.sign(
             { id: user.id, role: user.role },
             process.env.JWT_REFRESH_SECRET as string,
-            { expiresIn: '7d' } 
+            { expiresIn: '7d' }
         );
         logger.info(`User logged in successfully: ${username}`);
 

@@ -10,11 +10,11 @@ export const registerControl = async (req: Request, res: Response): Promise<void
 
     try {
         const { error } = userRegisterationSchema.validate(req.body);
-if (error) {
-    logger.warn(`Validation error: ${error.details.map(el => el.message).join(', ')}`);
-    res.status(400).json({ message: "Validation error" });
-    return;
-}
+        if (error) {
+            logger.warn(`Validation error: ${error.details.map(el => el.message).join(', ')}`);
+            res.status(400).json({ message: "Validation error" });
+            return;
+        }
 
         const existingUser = await User.findOne({ username });
         if (existingUser) {

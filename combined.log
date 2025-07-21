@@ -305,3 +305,27 @@
 {"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1751980967,\"exp\":1752672167}","timestamp":"2025-07-15T13:39:37.195Z"}
 {"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-15T13:39:37.201Z"}
 {"level":"info","message":"Product \"asffasf\" created successfully","timestamp":"2025-07-15T13:39:37.234Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-19T16:05:27.259Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-07-19T16:11:09.033Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-07-19T16:11:34.624Z"}
+{"level":"error","message":"Token expired for request: /createProducts","timestamp":"2025-07-19T16:12:27.807Z"}
+{"level":"info","message":"User logged in successfully: sfasfasga","timestamp":"2025-07-19T16:14:36.053Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1752941676,\"exp\":1753632876}","timestamp":"2025-07-19T16:15:21.576Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-19T16:15:21.590Z"}
+{"level":"info","message":"Product \"fassaff\" created successfully","timestamp":"2025-07-19T16:15:21.642Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1752941676,\"exp\":1753632876}","timestamp":"2025-07-19T16:25:31.240Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-19T16:25:31.245Z"}
+{"level":"info","message":"Product \"asddsaf\" created successfully","timestamp":"2025-07-19T16:25:31.260Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1752941676,\"exp\":1753632876}","timestamp":"2025-07-19T16:25:31.309Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-19T16:25:31.311Z"}
+{"level":"info","message":"Product \"687bc6fba8ae428ede403bb0\" created successfully","timestamp":"2025-07-19T16:25:31.344Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-19T17:54:06.186Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-19T17:55:46.146Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-19T21:06:48.575Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1752941676,\"exp\":1753632876}","timestamp":"2025-07-19T21:08:46.263Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-19T21:08:46.295Z"}
+{"level":"info","message":"Product \"VALERYUJA\" created successfully","timestamp":"2025-07-19T21:08:46.368Z"}
+{"level":"info","message":"Decoded token: {\"id\":\"6810c0bf29fcdc1b79f818ca\",\"role\":\"admin\",\"iat\":1752941676,\"exp\":1753632876}","timestamp":"2025-07-19T21:08:46.409Z"}
+{"level":"info","message":"User found: sfasfasga, role: admin","timestamp":"2025-07-19T21:08:46.417Z"}
+{"level":"info","message":"Product \"687c095e2a1b092fc3295454\" created successfully","timestamp":"2025-07-19T21:08:46.535Z"}
+{"level":"info","message":"Server running at http://localhost:5001/","timestamp":"2025-07-21T12:00:55.881Z"}

@@ -2,7 +2,7 @@ import React from "react";
 import ReduxProvider from "./ReduxProvider"; 
 import Navbar from "./Components/Navbar/Navbar";
 import { Metadata } from "next";
-import "./globals.css"
+import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -19,8 +19,10 @@ export default function RootLayout({
           />
         </head>
         <body>
-          <Navbar />
-          {children}
+          <div className="global">
+            <Navbar />
+            {children}
+          </div>
         </body>
       </html>
     </ReduxProvider>
